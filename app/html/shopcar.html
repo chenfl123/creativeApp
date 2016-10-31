@@ -8,14 +8,17 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../font/iconfont.css">
     <style>
-    .shop_header{padding:15px;background:darkviolet;}
-    .shop_header nav{
+    .shop_header,.shop_footer{padding:15px;background:darkviolet;}
+    .shop_header nav, .shop_footer nav{
         display: flex;
         height: 30px;
     }
  	.shop_header nav a{flex: 1;color: #fff;text-align: left;}
  	.shop_header nav a:nth-child(2){text-align: center;}
  	.shop_header nav a:nth-child(3){text-align: right;}
+    .shop_footer nav a{flex: 1;color: #fff;}
+
+    .shop_content{height: 500px;display: flex;}
     </style>
 </head>
 
@@ -27,8 +30,16 @@
             <a href="#"><span class="iconfont icon-iconfenlei"></span> </a>
         </nav>
     </header>
-    <section></section>
-    <footer></footer>
+    <section class="shop_content">
+    
+    </section>
+    <footer class="shop_footer">
+        <nav>
+            <a href="#"><input type="checkbox">全选 </a>
+            <a href="#">在线支付<span class="iconfont icon-houdongfangiconfont24"></span></a>
+            <a href="#">确认并支付<span class=""></span></a>
+        </nav>
+    </footer>
 </body>
 
 </html>
