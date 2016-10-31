@@ -6,19 +6,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>购物车</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../dist/css/shop.css">
     <link rel="stylesheet" href="../font/iconfont.css">
     <style>
-    .shop_header,.shop_footer{padding:15px;background:darkviolet;}
-    .shop_header nav, .shop_footer nav{
-        display: flex;
-        height: 30px;
-    }
- 	.shop_header nav a{flex: 1;color: #fff;text-align: left;}
- 	.shop_header nav a:nth-child(2){text-align: center;}
- 	.shop_header nav a:nth-child(3){text-align: right;}
-    .shop_footer nav a{flex: 1;color: #fff;}
-
-    .shop_content{height: 500px;display: flex;}
+        .shop_content .list li img{width: 60px;height: 60px;}
     </style>
 </head>
 
@@ -31,7 +22,10 @@
         </nav>
     </header>
     <section class="shop_content">
-    
+        <ul class="list">
+            <li><input type="checkbox"> <img id="s001" src="../img/18.jpg" alt="服饰"><div class="conf"><p class="title">秋季套装</p><p class="price">&yen;120.00</p></div><p class="last"><span>-</span><input type="text" size="2"><span>+</span></p></li>
+           
+        </ul>
     </section>
     <footer class="shop_footer">
         <nav>
