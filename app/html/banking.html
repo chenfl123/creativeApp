@@ -4,10 +4,22 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width"/>
 		<title>我的小金库</title>
-		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link rel="stylesheet" href="../css/style.css">
+	    <link rel="stylesheet" href="../dist/css/shop.css">
+	    <link rel="stylesheet" href="../font/iconfont.css">
 		<link rel="stylesheet" type="text/css" href="../dist/css/banking.css"/>
+		<!--<script src="../dist/js/jquery-1.12.0.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="../assets/zepto/dist/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../dist/js/banking.js" type="text/javascript" charset="utf-8"></script>		
 	</head>
 	<body>
+		<header class="shop_header">
+	        <nav>
+	            <a href="#"><span class="iconfont icon-houdongfangiconfont23"></span> </a>
+	            <a href="#"><span ></span>我的金库</a>
+	            <a href="#"><span class="iconfont icon-iconfenlei"></span> </a>
+	        </nav>
+	    </header>
 		<section class="head">
 			<dl>
 				<dt>1500</dt>
@@ -27,13 +39,24 @@
 
 			</ul>
 		</nav>
-		<div class="tabs">
-		    <ul>
-				<li>收入</li>
-				<li>100</li>
-				<li>提成</li>
-				<li>14:22</li>
+		<div id="tabs">
+			<ul>
+				<li>
+						<span>支出</span>
+						<span>100</span>
+						<span>提成</span>
+						<span>2016-09-22</span>
+				</li>
 			</ul>
 		</div>
+		<footer class="shop_footer">
+	        <nav>           
+	            <a href="#"><span class="icon iconfont icon-shouye"></span>首页</a>
+	            <a href="#"><span class="icon iconfont icon-jifen"></span>积分区</a>
+	            <a href="#"><span class="icon iconfont icon-class"></span>一元购</a>
+	            <a href="#"><span class="icon iconfont icon-gouwuche32pt"></span>购物车</a>
+	            <a href="#"><span class="icon iconfont icon-icon-pscenter"></span>个人中心</a>         
+	        </nav>
+	    </footer>
 	</body>
 </html>

@@ -1,5 +1,4 @@
 
-
  .borderno{
  	border-right:none ;
  }
@@ -16,9 +15,16 @@
 	justify-content: center;align-content: center;
 	text-align: center;
 }
-.tabs ul{display: flex;}
-.tabs li{
-	flex: 1;line-height: 40px;border: 1px solid silver;
-	justify-content: center;align-content: center;
-	text-align: center;
+#tabs li{
+	line-height: 40px;
+	
+	display: flex;display: flex;
 }
+#tabs li span{
+	justify-content: center;align-content: center;
+	text-align: center;display: block;
+	flex: 1;
+	border: 1px solid silver;
+	}
+.shop_footer nav a span{display: block;}
+.shop_footer nav a{flex: 1;color: #fff;justify-content: center;align-items: center;text-align: center;}
