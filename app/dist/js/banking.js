@@ -8,8 +8,9 @@ document.addEventListener("DOMContentLoaded",function(){
 		success:function(res){
 			console.log(res);
 			var $ul=$("#tabs ul");
-			var $li=$("<li/>");
-			$.each(res, function(idx,item) {    
+			
+			$.each(res, function(idx,item) {
+				var $li=$("<li/>");
                  var $span1=$("<span/>");                 
                  $span1.html(item.status).appendTo($li);
                
@@ -21,8 +22,10 @@ document.addEventListener("DOMContentLoaded",function(){
                  
                  var $span4=$("<span/>");
 				$span4.html(item.udtime).appendTo($li);
+				
+				$li.appendTo($ul);
 			});			
-			$li.appendTo($ul);
+			
 			$ul.appendTo($("#tabs"));
 		}
 		
