@@ -1,0 +1,184 @@
+body {
+	background-color: #f1f5f6;
+}
+
+.header {
+	display: flex;
+	height: 50px;
+	background-color: #8e488e;
+	color: white;
+	align-items: center;
+	text-align: center;
+}
+
+.header .zuo {
+	flex: 1;
+	font-size: 18px;
+}
+
+.header h1 {
+	flex: 5;
+	font-size: 18px;
+}
+
+.header .fenlei {
+	font-size: 18px;
+	flex: 1;
+}
+
+.information {
+	align-items: center;
+	text-align: center;
+	display: flex;
+	height: 85px;
+	background: linear-gradient(to right, #0d0208, #44090d, #6a3525);
+	color: white;
+	font-weight: bold;
+}
+
+.information .img {
+	flex: 1;
+	padding: 0 20px 0 20px;
+}
+
+.information .img img {
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+}
+
+.information .tel {
+	flex: 5;
+	font-size: 15px;
+	text-align: left;
+	height: 45px;
+	position: relative;
+}
+
+.information .tel p {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.information .tel p:nth-of-type(2) {
+	position: absolute;
+	left: 30px;
+	top: 30px;
+}
+
+.information .tel img {
+	position: absolute;
+	left: 5px;
+	top: 31px;
+	width: 15px;
+	height: 15px;
+	display: block;
+}
+
+.information .you {
+	flex: 1;
+	font-size: 18px;
+}
+
+.money {
+	display: flex;
+	height: 60px;
+	align-items: center;
+	text-align: center;
+	background-color: white;
+	margin: 0 0 10px 0;
+}
+
+.money div {
+	height: 42px;
+	flex: 1;
+	border-right: solid 1px #ccc;
+}
+
+.money div:nth-child(3) {
+	border: none;
+}
+
+.money div span {
+	color: #000;
+	font-weight: bold;
+}
+
+.money div span:nth-child(3) {
+	font-weight: normal;
+	color: #555;
+}
+
+.vip {
+	display: flex;
+	border-top: solid 1px #e7eaec;
+	height: 55px;
+	background-color: white;
+	align-items: center;
+	text-align: center;
+	padding: 0 20px 0 0;
+}
+
+.vip div:nth-child(1) {
+	flex: 1;
+	padding: 20px;
+}
+
+.vip div:nth-child(2) {
+	flex: 10;
+	text-align: left;
+}
+
+.vip div:nth-child(3) {
+	flex: 1;
+}
+
+.vip div:nth-child(3) span {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	border-radius: 50%;
+	background-color: #8e488e;
+	color: white;
+}
+
+.vip div:nth-child(4) {
+	font-size: 20px;
+	flex: 1;
+}
+
+.vip div a {
+	color: #555;
+}
+
+.sanji {
+	margin: 0 0 20px 0;
+	border-bottom: solid 1px #e7eaec;
+}
+
+.menu {
+	position: absolute;
+	bottom: 0;
+	height: 55px;
+	border-top: solid 1px #e7eaec;
+	background-color: white;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	text-align: center;
+}
+
+.menu div {
+	flex: 1;
+	color: #555;
+}
+
+.menu>div:hover a {
+	color: #8e488e;
+}
+
+.menu div:hover span a {
+	color: #8e488e;
+}

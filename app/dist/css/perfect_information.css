@@ -1,0 +1,126 @@
+.header {
+	display: flex;
+	height: 50px;
+	background-color: #8e488e;
+	color: white;
+	align-items: center;
+	text-align: center;
+}
+
+.header .zuo {
+	flex: 1;
+	font-size: 18px;
+}
+
+.header h1 {
+	flex: 5;
+	font-size: 18px;
+}
+
+.header .fenlei {
+	font-size: 18px;
+	flex: 1;
+}
+
+section p {
+	display: flex;
+	height: 30px;
+	border: solid 1px #d5d5d5;
+	margin: 10px 30px;
+	border-radius: 3px;
+}
+
+section label {
+	flex: 1;
+	background-color: #eee;
+	line-height: 30px;
+	color: #555;
+	text-align: center;
+	border-right: solid 1px #d5d5d5;
+}
+
+section p input {
+	flex: 3;
+	border: none;
+}
+
+section .dizhi {
+	display: flex;
+	height: 170px;
+	border: solid 1px #d5d5d5;
+	margin: 10px 30px;
+	border-radius: 3px;
+}
+
+section .dizhi label {
+	line-height: 170px;
+}
+
+section .dizhi div {
+	flex: 3;
+}
+
+section .dizhi select {
+	width: 100%;
+	border: none;
+	height: 40px;
+	border-bottom: solid 1px #d5d5d5;
+	color: #999999;
+}
+
+section .dizhi input {
+	width: 100%;
+	border: none;
+	height: 47px;
+}
+
+.sub {
+	padding: 10px 30px;
+}
+
+.sub button {
+	width: 100%;
+	height: 34px;
+	background-color: #8e488e;
+	color: white;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+}
+
+.active {
+	color: red;
+}
+
+.menu {
+	position: absolute;
+	bottom: 0;
+	height: 55px;
+	border-top: solid 1px #e7eaec;
+	background-color: white;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	text-align: center;
+}
+
+.menu div {
+	flex: 1;
+	color: #555;
+}
+
+.menu>div:hover a {
+	color: #8e488e;
+}
+
+.menu div:hover span a {
+	color: #8e488e;
+}
+
+.active {
+	color: red;
+}
+
+section .dizhi div .active {
+	color: red;
+}
