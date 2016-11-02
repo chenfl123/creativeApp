@@ -1,0 +1,26 @@
+[
+	{
+		"id":"G001",
+		"imgurl":"../img/50.jpg"
+	},
+	{
+		"id":"G002",
+		"imgurl":"../img/51.jpg"
+	},
+	{
+		"id":"G003",
+		"imgurl":"../img/52.jpg"
+	},
+	{
+		"id":"G004",
+		"imgurl":"../img/53.jpg"
+	},
+	{
+		"id":"G005",
+		"imgurl":"../img/24.jpg"
+	},
+	{
+		"id":"G006",
+		"imgurl":"../img/25.jpg"
+	}
+]
