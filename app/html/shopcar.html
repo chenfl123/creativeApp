@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head>  
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>购物车</title>
     <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="../dist/css/shop.css">
     <link rel="stylesheet" href="../font/iconfont.css">
-    <style>
-        .shop_content .list li img{width: 60px;height: 60px;}
-    </style>
+    <script src="../assets/zepto/zepto.js"></script>
+    <script src="../assets/zepto/touch.js"></script>
+    <script src="../js/shopcar.js"></script>
+
+
 </head>
 
 <body>
-    <header class="shop_header">
-        <nav>
-            <a href="#"><span class="iconfont icon-houdongfangiconfont23"></span> </a>
-            <a href="#"><span ></span>购物车</a>
-            <a href="#"><span class="iconfont icon-iconfenlei"></span> </a>
-        </nav>
-    </header>
+<div class="container-fluid">
+    <div class="row shop_header">
+        <div class="col-xs-4"><span class="iconfont icon-houdongfangiconfont23"></span></div>
+     <div class="col-xs-4 title">购物车</div>
+     <div class="col-xs-4 class"><span class="iconfont icon-iconfenlei"> </span></div>
+
+    </div>
     <section class="shop_content">
-        <ul class="list">
-            <li><input type="checkbox"> <img id="s001" src="../img/18.jpg" alt="服饰"><div class="conf"><p class="title">秋季套装</p><p class="price">&yen;120.00</p></div><p class="last"><span>-</span><input type="text" size="2"><span>+</span></p></li>
-           
-        </ul>
+
     </section>
     <footer class="shop_footer">
         <nav>
-            <a href="#"><input type="checkbox">全选 </a>
+            <a href="#">
+                <input type="checkbox">全选
+             </a>
             <a href="#">在线支付<span class="iconfont icon-houdongfangiconfont24"></span></a>
             <a href="#">确认并支付<span class=""></span></a>
         </nav>
     </footer>
+</div>
 </body>
 
 </html>

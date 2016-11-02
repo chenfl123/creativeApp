@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width initial-scale=1">
+		<title>OYA商城</title>
+		<script src="../js/jquery-2.1.1.js"></script>
+		<script src="../js/jquery.mobilemin.js"></script>
+		<script src="../js/swiper.min.js"></script>
+		<script src="../js/myjs.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/jquery.mobilemin.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+	</head>
+	<body>
+		<div data-role="page" id="pagehome" class="Page">
+			<div data-role="header" class="header" data-position="fixed">
+				<h1>OYA商城</h1>
+				<a href="#" style="color: #fff;margin-left: 90vw;margin-top: -1vh;">
+    				<i class="iconfont">&#xe60c;</i>
+    			</a>
+			</div>
+			<!---- ---- -------首页主体内容区    ------------------->
+			<!--轮播图-->
+			<div role="content" class="main">
+				<!--回到顶部-->
+				<div class="iconback" style="font-size: 40px;">
+					<i class="iconfont" id="iconback">&#xe618;</i>
+				</div>
+				<div class="swiper-container" id="main_swiper">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide"><img src="../img/1.jpg"></div>
+				        <div class="swiper-slide"><img src="../img/2.jpg"></div>
+				        <div class="swiper-slide"><img src="../img/3.jpg"></div>
+				        <div class="swiper-slide"><img src="../img/4.jpg"></div>
+				        <div class="swiper-slide"><img src="../img/5.jpg"></div>
+				        <div class="swiper-slide"><img src="../img/6.jpg"></div>
+				        <div class="swiper-slide"><img src="../img/7.jpg"></div>
+				        <div class="swiper-slide"><img src="../img/8.jpg"></div>
+				        <div class="swiper-slide"><img src="../img/9.jpg"></div>
+				        <div class="swiper-slide"><img src="../img/10.jpg"></div>
+				        <div class="swiper-slide"><img src="../img/11.jpg"></div>
+				    </div>
+				    <div class="swiper-pagination"></div>
+				</div>
+				<!--精选品类-->
+				<div class="jingxuan">
+					<img src="../img/41.jpg" />
+				</div>
+				<!--女装-->
+				<div class="nvzhuang">
+					<img src="../img/31.jpg" />
+				</div>
+				<!--列表展示区两行-->
+				<div class="pagehome_show">
+					<!--<div class="pagehome_showlist">
+						<img data-original="img/27.jpg" />
+						<img data-original="img/27.jpg" />
+						<img data-original="img/29.jpg" />
+						<img data-original="img/27.jpg" />
+						<img data-original="img/27.jpg" />
+						<img data-original="img/29.jpg" />
+						<img data-original="img/27.jpg" />
+						<img data-original="img/27.jpg" />
+						<img data-original="img/29.jpg" />
+						<img data-original="img/27.jpg" />
+						<img data-original="img/27.jpg" />
+						<img data-original="img/29.jpg" />
+						<img data-original="img/27.jpg" />
+						<img data-original="img/27.jpg" />
+						<img data-original="img/29.jpg" />
+					</div>-->
+					<!--<ul class="pagehome_showlist">
+						<li><a href="#"><img src="img/25.jpg" alt="" /></a></li>
+						<li><a href="#"><img src="img/25.jpg" alt="" /></a></li>
+						<li><a href="#"><img src="img/25.jpg" alt="" /></a></li>
+						<li><a href="#"><img src="img/25.jpg" alt="" /></a></li>
+						<li><a href="#"><img src="img/25.jpg" alt="" /></a></li>
+						<li><a href="#"><img src="img/25.jpg" alt="" /></a></li>
+					</ul>-->
+					
+					<!--<ul class="pagehome_showlist2">
+						<li><a href="#"><img src="img/51.jpg" alt="" /></a></li>
+						<li><a href="#"><img src="img/51.jpg" alt="" /></a></li>
+						<li><a href="#"><img src="img/51.jpg" alt="" /></a></li>
+						<li><a href="#"><img src="img/51.jpg" alt="" /></a></li>
+						<li><a href="#"><img src="img/51.jpg" alt="" /></a></li>
+						<li><a href="#"><img src="img/51.jpg" alt="" /></a></li>
+					</ul>-->
+					
+					<!--<ul class="pagehome_showlist3">
+						<li>
+							<a href="#">
+								<img src="img/4.jpg" alt="" />
+								<p>津率享红华宁香平衡液 150ml</p>
+								<p>￥120</p>
+							</a>
+						</li>
+					</ul>-->
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed" class="footer">
+				<ul>
+		    		<li>
+		    			<a href="index.html">
+		    				<i class="iconfont">&#xe61a;</i>
+		    				<div class="name">首页</div>
+		    			</a>
+		    		</li>
+		    		<li>
+		    			<a href="jifen.html">
+		    				<i class="iconfont">&#xe680;</i>
+		    				<div class="name">积分区</div>
+		    			</a>
+		    		</li>
+		    		<li>
+		    			<a href="pagekind.html">
+		    				<i class="iconfont" data-transition="slide">&#xe662;</i>
+		    				<div class="name">分类</div>
+		    			</a>
+		    		</li>
+		    		<li>
+		    			<a href="pagebuy.html">
+		    				<i class="iconfont">&#x3440;</i>
+		    				<div class="name">购物车</div>
+		    			</a>
+		    		</li>
+		    		<li>
+		    			<a href="pageMine.html">
+		    				<i class="iconfont">&#xe600;</i>
+		    				<div class="name">个人中心</div>
+		    			</a>
+		    		</li>
+		    	</ul>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+</html>
