@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
        $li.append($img);
        $li.append( $div);
        $li.append($p);
-        $li.appendTo($ul);
+       $li.appendTo($ul);
        }
     })
   $shoplist.append($ul);
