@@ -4,21 +4,38 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width"/>
 		<title>我的小金库</title>
-		<link rel="stylesheet" href="../css/style.css">
-	    <link rel="stylesheet" href="../dist/css/shop.css">
+		<link rel="stylesheet" type="text/css" href="../css/jquery.mobilemin.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
 	    <link rel="stylesheet" href="../font/iconfont.css">
 		<link rel="stylesheet" type="text/css" href="../dist/css/banking.css"/>
-		<script src="../assets/zepto/dist/zepto.js" type="text/javascript" charset="utf-8"></script>
-		<script src="../dist/js/banking.js" type="text/javascript" charset="utf-8"></script>		
+		<!--<script src="../assets/zepto/dist/zepto.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="../js/jquery-2.1.1.js"></script>
+		<script src="../js/jquery.mobilemin.js"></script>
+		<script src="../dist/js/banking.js" type="text/javascript" charset="utf-8"></script>	
+		<!--<script src="../js/jquery-2.1.1.js"></script>
+		<script src="../js/jquery.mobilemin.js"></script>
+		<script src="../js/swiper.min.js"></script>
+		<script src="../js/pagebuy.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/jquery.mobilemin.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>-->
 	</head>
 	<body>
-		 <div class="banking_header">
-		 	<nav>
-            <a href="#"><span class="iconfont icon-houdongfangiconfont23"><span/></a>
-            <a href="#"><span class="active">我的金库</span></a>
-            <a href="#"><span class="iconfont icon-iconfenlei"> </span></a>
-            </nav>
-        </div>
+		<!--购物车页-->
+		<div data-role="page" id="pagebuy" class="Page">
+						
+		  	<div data-role="header" class="header" data-position="fixed">
+		    	<a href="#">
+		  			<i class="iconfont">&#xe624;</i>
+		  		</a>
+		    	<h1>小金库</h1>
+		    	<a href="#">
+		    		<i class="iconfont">&#xe662;</i>
+		    	</a>
+		  	</div>
 		<section class="head">
 			<dl>
 				<dt>1500</dt>
@@ -48,14 +65,40 @@
 				</li>-->
 			</ul>
 		</div>
-		<footer class="banking_footer">
-            <nav>               
-                <a href="#"> <span class="icon iconfont icon-shouye"></span>首页</a>
-                <a href="#"> <span class=" icon iconfont icon-jifen"></span>积分区</a>
-                <a href="#"> <span class="icon iconfont icon-iconfenlei"></span>分类</a>
-                <a href="#"> <span class="icon iconfont icon-gouwuche32pt"></span>购物车</a>
-                <a href="#"> <span class="icon iconfont icon-icon-pscenter"></span>个人中心</a>               
-            </nav>
-        </footer>
+			<div data-role="footer" data-position="fixed" class="footer">
+				<ul>
+		    		<li>
+		    			<a data-ajax="false" href="index.html">
+		    				<i class="iconfont">&#xe61a;</i>
+		    				<div class="name">首页</div>
+		    			</a>
+		    		</li>
+		    		<li>
+		    			<a href="jifen.html">
+		    				<i class="iconfont">&#xe680;</i>
+		    				<div class="name">积分区</div>
+		    			</a>
+		    		</li>
+		    		<li>
+		    			<a href="pagekind.html">
+		    				<i class="iconfont" data-transition="slide">&#xe662;</i>
+		    				<div class="name">分类</div>
+		    			</a>
+		    		</li>
+		    		<li>
+		    			<a data-ajax="false" href="shopcar.html">
+		    				<i class="iconfont">&#x3440;</i>
+		    				<div class="name">购物车</div>
+		    			</a>
+		    		</li>
+		    		<li>
+		    			<a data-ajax="false"  href="personal_center.html">
+		    				<i class="iconfont">&#xe600;</i>
+		    				<div class="name">个人中心</div>
+		    			</a>
+		    		</li>
+		    	</ul>
+			</div>
+		</div>
 	</body>
 </html>
