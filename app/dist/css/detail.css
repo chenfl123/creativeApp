@@ -1,32 +1,27 @@
- .shop_header {
-        background: #80f;
-        color: #fff;
-        padding: 12px;
-    }
-    
-    .shop_header .class {
-        text-align: right;
-    }
-    
-    .shop_header .title {
-        text-align: center;
-    }
-    
-    .shop_header .title span.active {
-        background: #fff;  padding: 18px 3px;
-        color: #000;
-    }
-    
-    .show img{width: 100%;}
-    .d_show{display: flex;justify-content: center;}
-    .d_show img{flex:1;width: 300px;height: 300px;text-align: center;}
-    .detail .price{color: red;font-size: 1.5em;}
 
-    .shop_footer{position: fixed;bottom: 0;width: 100%;left: 0;right: 0;}
-	.shop_footer nav{display: flex;background: #80f;}
-	.shop_footer nav a{flex: 1;text-decoration: none;color: #fff;text-align: center;padding: 10px 0;}
-	.shop_footer nav a:nth-child(1){background: #fff;border-top: #f0f 0.1em solid ;color: #80f;position: relative;} 
-	.shop_footer nav a:nth-child(1) .number{position: absolute;right: 20px;top:10px;width: 20px;height: 20px;border-radius: 50%;background: #80f;color: #fff;}
-	.shop_footer nav a:nth-child(2){background: #f0f;}
-	
+.shop_header { background: #80f; color: #fff; padding: 12px; }
+
+.shop_header .class { text-align: right; }
+
+.shop_header .title { text-align: center; }
+
+.shop_header .title span.active { background: #fff; padding: 18px 3px; color: #000; }
+
+.show img { width: 100%; }
+
+.d_show img { /*flex: 1;*/ width: 300px; height: 300px; text-align: center; }
+
+.detail .price { color: red; font-size: 1.5em; }
+
+.shop_footer { position: fixed; bottom: 0; width: 100%; left: 0; right: 0; }
+
+.shop_footer nav { display: flex; background: #80f; }
+
+.shop_footer nav a { flex: 1; text-decoration: none; color: #fff; text-align: center; padding: 10px 0; }
+
+.shop_footer nav a:nth-child(1) { background: #fff; border-top: #f0f 0.1em solid; color: #80f; position: relative; }
+
+.shop_footer nav a:nth-child(1) .number { position: absolute; right: 20px; top: 10px; width: 20px; height: 20px; border-radius: 50%; background: #80f; color: #fff; }
+
+.shop_footer nav a:nth-child(2) { background: #f0f; }
 

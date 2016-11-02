@@ -1,20 +1,24 @@
 
 
-
 document.addEventListener('DOMContentLoaded',function(){
-
-
-
+  // 商品轮播图
+var mySwiper2 = new Swiper('.swiper-container', {
+            // 自动播放
+            autoplay: 5000,
+          
+            loop: true,
+          
+        });
 	
 	//切换
     $(".container-fluid .title span").first().on("click",function(){
-    	console.log("你妹");
+    	
     	$(this).siblings().removeClass("active");
     	$(this).first().addClass("active");
     	
     });
      $(".container-fluid .title span").last().on("click",function(){
-    	console.log("我妹");
+    
     	$(this).siblings().removeClass("active");
     	$(this).last().addClass("active");
     	
@@ -28,7 +32,9 @@ document.addEventListener('DOMContentLoaded',function(){
   var shopString= localStorage.getItem('shopString');
   shopString=shopString ?JSON.parse(shopString):[];
 
+//arr数组收集所有商品id
   var arr=[];
+// carnum购物车数量
 
   var carnum=0;
   if (shopString!=[]) {
@@ -40,7 +46,8 @@ document.addEventListener('DOMContentLoaded',function(){
 
   	$number.html(carnum);
 
-  
+  	// 加入购物车设置数据
+
 	$addcar.on('singleTap',function(){
 		var goods={};
 		var Id =$('.d_show img').attr('id');
