@@ -4,7 +4,34 @@
   "userImg_pic":"img/56.jpg",
   "userName":"李二",
   "addTime":"2016-05-10 14:00",
-  "star":"*",
+  "star":"1",
+  "comment":"很不错，下次我还来买",
+  "shopTime":"2016-09-29 19:00"
+  },
+    {
+  "id":"0000",
+  "userImg_pic":"img/56.jpg",
+  "userName":"李二",
+  "addTime":"2016-05-10 14:00",
+  "star":"3",
+  "comment":"很不错，下次我还来买",
+  "shopTime":"2016-09-29 19:00"
+  },
+    {
+  "id":"0000",
+  "userImg_pic":"img/56.jpg",
+  "userName":"李二",
+  "addTime":"2016-05-10 14:00",
+  "star":"3",
+  "comment":"很不错，下次我还来买",
+  "shopTime":"2016-09-29 19:00"
+  },
+    {
+  "id":"0000",
+  "userImg_pic":"img/56.jpg",
+  "userName":"李二",
+  "addTime":"2016-05-10 14:00",
+  "star":"5",
   "comment":"很不错，下次我还来买",
   "shopTime":"2016-09-29 19:00"
   }
