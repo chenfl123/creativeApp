@@ -1,30 +1,24 @@
 
 
-
-<<<<<<< HEAD
- var mySwiper2 = new Swiper('.swiper-container', {
+document.addEventListener('DOMContentLoaded',function(){
+  // 商品轮播图
+var mySwiper2 = new Swiper('.swiper-container', {
             // 自动播放
             autoplay: 5000,
           
             loop: true,
           
         });
-=======
-document.addEventListener('DOMContentLoaded',function(){
-
-
->>>>>>> 2bb74964e39cb5d132d0fcc4f84b6ca7825b474d
-
 	
 	//切换
     $(".container-fluid .title span").first().on("click",function(){
-    	console.log("你妹");
+    	
     	$(this).siblings().removeClass("active");
     	$(this).first().addClass("active");
     	
     });
      $(".container-fluid .title span").last().on("click",function(){
-    	console.log("我妹");
+    
     	$(this).siblings().removeClass("active");
     	$(this).last().addClass("active");
     	
@@ -37,15 +31,11 @@ document.addEventListener('DOMContentLoaded',function(){
 
   var shopString= localStorage.getItem('shopString');
   shopString=shopString ?JSON.parse(shopString):[];
-<<<<<<< HEAD
+
 //arr数组收集所有商品id
   var arr=[];
 // carnum购物车数量
-=======
 
-  var arr=[];
-
->>>>>>> 2bb74964e39cb5d132d0fcc4f84b6ca7825b474d
   var carnum=0;
   if (shopString!=[]) {
   	 $.each(shopString,function(idx, item){
@@ -56,11 +46,8 @@ document.addEventListener('DOMContentLoaded',function(){
 
   	$number.html(carnum);
 
-<<<<<<< HEAD
   	// 加入购物车设置数据
-=======
-  
->>>>>>> 2bb74964e39cb5d132d0fcc4f84b6ca7825b474d
+
 	$addcar.on('singleTap',function(){
 		var goods={};
 		var Id =$('.d_show img').attr('id');
