@@ -1,11 +1,10 @@
 
 
-<<<<<<< HEAD
+
+document.addEventListener('DOMContentLoaded',function(){
 
 
 
-document.addEventListener("DOMContentLoaded",function(){
-	
 	
 	//鍒囨崲
     $(".container-fluid .title span").first().on("click",function(){
@@ -21,17 +20,6 @@ document.addEventListener("DOMContentLoaded",function(){
     	
     });
     
-	
-	
-	
-	
-})
-=======
-document.addEventListener('DOMContentLoaded',function(){
-
-
-
-
 
   var $addcar= $('.addcar');
   var $number =$('.number');
@@ -39,9 +27,9 @@ document.addEventListener('DOMContentLoaded',function(){
 
   var shopString= localStorage.getItem('shopString');
   shopString=shopString ?JSON.parse(shopString):[];
-// arr收集所有获取到的商品id
+
   var arr=[];
-// carnum购物车显示数量
+
   var carnum=0;
   if (shopString!=[]) {
   	 $.each(shopString,function(idx, item){
@@ -52,7 +40,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
   	$number.html(carnum);
 
-  	// 加入购物车单击事件
+  
 	$addcar.on('singleTap',function(){
 		var goods={};
 		var Id =$('.d_show img').attr('id');
@@ -79,4 +67,3 @@ document.addEventListener('DOMContentLoaded',function(){
 
 	
 })	
->>>>>>> 6d2eebfa69adfe2d69f5456e87527230c59e2c14
