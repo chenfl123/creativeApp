@@ -141,3 +141,40 @@ body{
 .menu div:hover span a {
 	color: #8e488e;
 }
+
+.fix{
+	width: 45px;
+	height: 45px;
+	background-color: #d02a82;
+	border-radius: 50%;
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	color: white;
+	line-height: 45px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.list{
+	position: fixed;
+	right: 10px;
+	top: 50px;
+	width: 30%;
+	padding: 0;
+}
+.list ul{
+	width: 100%;
+}
+.list ul li{
+	height: 40px;
+	width: 100%;
+	background-color: #595f65;
+	border-bottom: solid 1px #CCCCCC;	
+	line-height: 40px;
+	text-align: center;
+}
+.list ul li a{
+	color: white;
+	border: none;
+}

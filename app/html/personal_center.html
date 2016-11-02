@@ -7,6 +7,18 @@
 		<link rel="stylesheet" href="../css/style.css" />
 		<link rel="stylesheet" href="../dist/css/personal_center.css" />
 		<link rel="stylesheet" href="../font/iconfont.css" />
+		<script type="text/javascript" src="../assets/jquery-1.12.0.js" ></script>
+		<script>
+			$(function(){
+				$list = $(".list");
+				$lei = $(".icon-iconfenlei");
+				
+				$list.hide();
+				$lei.on("click",function(){
+					$list.slideToggle(500);
+				})
+			})
+		</script>
 	</head>
 	<body>
 		<header class="header">
@@ -81,6 +93,17 @@
 				<a href="personal_center.html" class="iconfont icon-icon-pscenter"></a><br />
 				<span><a href="personal_center.html">个人中心</a></span>
 			</div>
+		</nav>
+		<nav class="list">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">积分区</a></li>
+				<li><a href="my_orders.html">我的订单</a></li>
+				<li><a href="perfect_information.html">完善资料</a></li>
+				<li><a href="#">分类</a></li>
+				<li><a href="#">购物车</a></li>
+				<li><a href="personal_center.html">个人中心</a></li>
+			</ul>
 		</nav>
 	</body>
 </html>

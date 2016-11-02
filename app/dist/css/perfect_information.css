@@ -124,3 +124,26 @@ section .dizhi input {
 section .dizhi div .active {
 	color: red;
 }
+
+.list{
+	position: fixed;
+	right: 10px;
+	top: 50px;
+	width: 30%;
+	padding: 0;
+}
+.list ul{
+	width: 100%;
+}
+.list ul li{
+	height: 40px;
+	width: 100%;
+	background-color: #595f65;
+	border-bottom: solid 1px #CCCCCC;	
+	line-height: 40px;
+	text-align: center;
+}
+.list ul li a{
+	color: white;
+	border: none;
+}

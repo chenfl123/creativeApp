@@ -14,6 +14,10 @@
 			$del = $(".dingdan .fukan .del");
 			$zhifu = $(".dingdan .fukan .zhifu");
 			$wuliu = $(".dingdan .fukan .wuliu");
+			$fix = $(".fix");
+			$list = $(".list");
+			$lei = $(".icon-iconfenlei");
+			
 			$del.on("click",function(){
 				$(this).closest("section").slideUp();
 			});
@@ -28,6 +32,23 @@
 				$a_ = $(this).closest(".heji").prev(".shangpin").find(".jiage span").text();
 				$b_ = $(this).closest(".heji").prev(".shangpin").find(".shuliang span").text();
 				$(this).text($a_*$b_)
+			});
+			
+			$fix.hide();
+			$(window).on("scroll",function(){
+				if($(window).scrollTop() > 100){
+					$fix.show(1000);
+				}else{
+					$fix.hide(1000);
+				}
+			});
+			$fix.on("click",function(){
+				$("body").animate({scrollTop:0},500);
+			})
+			
+			$list.hide();
+			$lei.on("click",function(){
+				$list.slideToggle(500);
 			})
 		})
 	</script>
@@ -134,6 +155,18 @@
 				<a href="personal_center.html" class="iconfont icon-icon-pscenter"></a><br />
 				<span><a href="personal_center.html">个人中心</a></span>
 			</div>
+		</nav>
+		<div class="fix">Top</div>
+		<nav class="list">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">积分区</a></li>
+				<li><a href="my_orders.html">我的订单</a></li>
+				<li><a href="perfect_information.html">完善资料</a></li>
+				<li><a href="#">分类</a></li>
+				<li><a href="#">购物车</a></li>
+				<li><a href="personal_center.html">个人中心</a></li>
+			</ul>
 		</nav>
 	</body>
 </html>

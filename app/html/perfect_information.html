@@ -16,6 +16,9 @@
 				$shi = $("section>.dizhi>div>.shi");
 				$xian = $("section>.dizhi>div>.xian");
 				$dizhi = $("section>.dizhi>div>input");
+				$btn = $(".sub button");
+				$list = $(".list");
+				$lei = $(".icon-iconfenlei");
 				
 				$name.on("blur",function(){
 					if($name.val() == ""){
@@ -65,6 +68,23 @@
 					}else if($dizhi.val() !== "请输入您的地址!"){
 						$dizhi.removeClass("active");
 					}
+				});
+				
+				$btn.on("click",function(){
+					var is = ($name.val() == "") || ($name.val() == "请输入您的昵称!") || ($phone.val() == "") || ($phone.val() == "请输入您的手机号!") || ($phone.val() == "请输入正确手机号!") || ($sheng.val() == "选择省") || ($shi.val() == "选择市") || ($xian.val() == "选择区/县") || ($dizhi.val() == "") || ($dizhi.val() == "请输入您的地址!");
+					if(is){
+						alert("请完善信息")
+					}else{
+						alert("提交成功")
+					}
+				});
+			
+				$list.hide();
+//				$(window).on("click",function(){
+//					$list.hide(500);
+//				})
+				$lei.on("click",function(){
+					$list.slideToggle(500);
 				});
 			})
 		</script>
@@ -136,6 +156,17 @@
 				<a href="personal_center.html" class="iconfont icon-icon-pscenter"></a><br />
 				<span><a href="personal_center.html">个人中心</a></span>
 			</div>
+		</nav>
+		<nav class="list">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">积分区</a></li>
+				<li><a href="my_orders.html">我的订单</a></li>
+				<li><a href="perfect_information.html">完善资料</a></li>
+				<li><a href="#">分类</a></li>
+				<li><a href="#">购物车</a></li>
+				<li><a href="personal_center.html">个人中心</a></li>
+			</ul>
 		</nav>
 	</body>
 
