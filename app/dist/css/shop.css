@@ -2,7 +2,7 @@
     .shop_header {
         background: #80f;
         color: #fff;
-      height: 30px;
+       padding: 12px;
     }
     
     .shop_header .class {
@@ -13,7 +13,7 @@
         text-align: center;
     }
 
- .shop_content {  display: flex; padding: 5px 0  25px 0;}
+ .shop_content {  display: flex; /*padding: 5px 0  25px 0;*/}
 
 .shop_content .list { width: 100%; }
 
@@ -24,10 +24,12 @@
 .shop_content .list li #checks { text-align: center; }
 
 .shop_content .list li .last { display: flex; }
+.shop_content .list li .last input{border:none;text-align: center;border-top: 0.1em solid #dadada;border-bottom: 0.1em solid #dadada;}
 
-.shop_content .list li .last span { padding: 0 5px; }
-
-.shop_content .list li .conf { flex: 3; }
+.shop_content .list li .last span {padding: 0 5px;  border: 0.1em solid #dadada;}
+.shop_content .list li .last span:last-child{border: none;}
+.shop_content .list li .conf { flex: 3; color: red;}
+.shop_content .list li .conf p:first-child{color: #333;}
 
 .shop_content .list li img { width: 60px; height: 60px; }
 
