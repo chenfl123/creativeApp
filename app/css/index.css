@@ -1,0 +1,271 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.Page .iconback {
+  position: fixed;
+  bottom: 10vh;
+  right: 10vw;
+  color: #8E488E;
+  width: 5vw;
+  height: 10vh;
+}
+
+#iconback {
+  font-size: 50px;
+}
+
+.Page .header {
+  background: #8E488E;
+}
+
+.Page .header h1 {
+  color: #fff;
+}
+
+.Page .header a {
+  color: #fff;
+  margin-top: -1vw;
+}
+
+.Page .footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #ccc;
+  color: #fff;
+  height: 10vh;
+  background: #F5F5F5;
+}
+
+.Page .footer ul {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.Page .footer ul li {
+  width: 20vw;
+  height: 10vh;
+  text-align: center;
+  line-height: 5vh;
+  float: left;
+}
+
+.Page .footer ul li a {
+  color: #666;
+  text-decoration: none;
+}
+
+#pagehome .footer li:nth-child(1) {
+  background: #8E488E;
+  color: #fff;
+}
+
+#pagehome .footer li:nth-child(1) a {
+  color: #fff;
+}
+
+#jifen .footer li:nth-child(2) {
+  background: #8E488E;
+}
+
+#jifen .footer li:nth-child(2) a {
+  color: #fff;
+}
+
+#pagekind .footer li:nth-child(3) {
+  background: #8E488E;
+}
+
+#pagekind .footer li:nth-child(3) a {
+  color: #fff;
+}
+
+#pagebuy .footer li:nth-child(4) {
+  background: #8E488E;
+}
+
+#pagebuy .footer li:nth-child(4) a {
+  color: #fff;
+}
+
+#pageMine .footer li:nth-child(5) {
+  background: #8E488E;
+}
+
+#pageMine .footer li:nth-child(5) a {
+  color: #fff;
+}
+
+#pagehome .header {
+  background: #8E488E;
+}
+
+#pagehome .header h1 {
+  color: #fff;
+}
+
+#pagehome .main .swiper-container {
+  width: 100vw;
+  height: 40vh;
+}
+
+#pagehome .main .swiper-container img {
+  width: 100%;
+  height: 100%;
+}
+
+#pagehome .main .jingxuan {
+  width: 100vw;
+  height: auto;
+}
+
+#pagehome .main .jingxuan img {
+  width: 100%;
+  height: 100%;
+}
+
+#pagehome .main .nvzhuang {
+  width: 100vw;
+  height: auto;
+}
+
+#pagehome .main .nvzhuang img {
+  width: 100%;
+  height: 100%;
+}
+
+#pagehome .main .pagehome_show {
+  width: 98vw;
+  height: auto;
+  margin: 10px auto;
+}
+
+#pagehome .main .pagehome_show .pagehome_showlist {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#pagehome .main .pagehome_show .pagehome_showlist li {
+  flex: 1 1 45%;
+  height: 20vh;
+  margin: 5px 5px;
+}
+
+#pagehome .main .pagehome_show .pagehome_showlist li img {
+  width: 100%;
+  height: 100%;
+}
+
+#pagehome .main .pagehome_show .pagehome_showlist2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#pagehome .main .pagehome_show .pagehome_showlist2 li {
+  flex: 1 1 100%;
+  height: 20vh;
+  margin: 5px 5px;
+}
+
+#pagehome .main .pagehome_show .pagehome_showlist2 li img {
+  width: 100%;
+  height: 100%;
+}
+
+#pagehome .main .pagehome_show .pagehome_showlist3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#pagehome .main .pagehome_show .pagehome_showlist3 li {
+  flex: 1 1 100%;
+  height: 28vh;
+  margin: 5px 5px;
+}
+
+#pagehome .main .pagehome_show .pagehome_showlist3 li img {
+  width: 100%;
+  height: 21vh;
+}
+
+#pagehome .main .pagehome_show .pagehome_showlist3 li p {
+  height: 2vh;
+}
+
+#pagehome .main .pagehome_show .pagehome_showlist3 li p:nth-child(3) {
+  color: red;
+}
+
+#pagekind .main {
+  background: #F1F5F6;
+}
+
+#pagekind .main_leftlist {
+  margin-left: -15px;
+}
+
+#pagekind .main_rightlist {
+  margin-left: -15px;
+}
+
+#pagekind .main_rightlist td {
+  width: 25vw;
+  height: 15vh;
+  background: #fff;
+}
+
+#pagekind .main_rightlist td img {
+  width: 25vw;
+  height: 10vh;
+}
+
+#pagekind .main_rightlist td p {
+  text-align: center;
+}
+
+#chaoliuNV .main {
+  background: #F1F5F6;
+}
+
+#chaoliuNV .main_leftlist {
+  margin-left: -15px;
+}
+
+#chaoliuNV .main_leftlist {
+  margin-left: -15px;
+}
+
+#chaoliuNV .main_rightlist td {
+  width: 25vw;
+  height: 15vh;
+  background: #fff;
+}
+
+#chaoliuNV .main_rightlist td img {
+  width: 25vw;
+  height: 10vh;
+}
+
+#chaoliuNV .main_rightlist td p {
+  text-align: center;
+}
+
+#pageMine #myPanel {
+  width: 60vw;
+}
+
+#pageMine .main {
+ 
+  min-height: 80vh;
+}
