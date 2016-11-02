@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../dist/css/my_orders.css" />
+		<link rel="stylesheet" href="../font/iconfont.css" />
+	</head>
+	<script type="text/javascript" src="../assets/jquery-1.12.0.js" ></script>
+	<script>
+		$(function(){
+			$del = $(".dingdan .fukan .del");
+			$zhifu = $(".dingdan .fukan .zhifu");
+			$wuliu = $(".dingdan .fukan .wuliu");
+			$fix = $(".fix");
+			$list = $(".list");
+			$lei = $(".icon-iconfenlei");
+			
+			$del.on("click",function(){
+				$(this).closest("section").slideUp();
+			});
+			$zhifu.on("click",function(){
+				alert("银联支付");
+			});
+			$wuliu.on("click",function(){
+				alert("暂无物流信息");
+			});
+			$heji = $(".dingdan .heji .he span");
+			$heji.each(function(){
+				$a_ = $(this).closest(".heji").prev(".shangpin").find(".jiage span").text();
+				$b_ = $(this).closest(".heji").prev(".shangpin").find(".shuliang span").text();
+				$(this).text($a_*$b_)
+			});
+			
+			$fix.hide();
+			$(window).on("scroll",function(){
+				if($(window).scrollTop() > 100){
+					$fix.show(1000);
+				}else{
+					$fix.hide(1000);
+				}
+			});
+			$fix.on("click",function(){
+				$("body").animate({scrollTop:0},500);
+			})
+			
+			$list.hide();
+			$lei.on("click",function(){
+				$list.slideToggle(500);
+			})
+		})
+	</script>
+	<body>
+		<header class="header">
+			<div class="zuo iconfont icon-houdongfangiconfont23"></div>
+			<h1>我的订单</h1>
+			<div class="fenlei iconfont icon-iconfenlei"></div>
+		</header>
+		<nav class="list">
+			<a href="#">全部</a>
+			<a href="#">待付款</a>
+			<a href="#">待发货</a>
+			<a href="#">待收货</a>
+			<a href="#">待评价</a>
+		</nav>
+		<section class="dingdan">
+			<div class="dianpu"><a href="#">店铺1</a><span>交易成功</span></div>
+			<div class="shangpin">
+				<a href="#"><img src="../img/56.jpg"/></a>
+				<a class="mingzi" href="#">斯文印花黑灰色短袖连衣裙</a>
+				<span class="jiage">￥<span>88</span></span>
+				<span class="shuliang">x<span>2</span></span>
+			</div>
+			<div class="heji"><span class="he">共一件商品,合计：￥<span>100</span></span></div>
+			<div class="fukan">
+				<button class="zhifu">付款</button>
+				<button class="del">删除订单</button>
+				<button class="wuliu">查看物流</button>
+			</div>
+		</section>
+		<section class="dingdan">
+			<div class="dianpu"><a href="#">店铺2</a><span>交易成功</span></div>
+			<div class="shangpin">
+				<a href="#"><img src="../img/57.jpg"/></a>
+				<a class="mingzi" href="#">精致斑马纹墨绿色无袖连体修身裙</a>
+				<span class="jiage">￥<span>188</span></span>
+				<span class="shuliang">x<span>3</span></span>
+			</div>
+			<div class="heji"><span class="he">共一件商品,合计：￥<span>100</span></span></div>
+			<div class="fukan">
+				<button class="zhifu">付款</button>
+				<button class="del">删除订单</button>
+				<button class="wuliu">查看物流</button>
+			</div>
+		</section>
+		<section class="dingdan">
+			<div class="dianpu"><a href="#">店铺3</a><span>交易成功</span></div>
+			<div class="shangpin">
+				<a href="#"><img src="../img/58.jpg"/></a>
+				<a class="mingzi" href="#">斯文印花黑灰色短袖连衣裙</a>
+				<span class="jiage">￥<span>288</span></span>
+				<span class="shuliang">x<span>3</span></span>
+			</div>
+			<div class="heji"><span class="he">共一件商品,合计：￥<span>100</span></span></div>
+			<div class="fukan">
+				<button class="zhifu">付款</button>
+				<button class="del">删除订单</button>
+				<button class="wuliu">查看物流</button>
+			</div>
+		</section>
+		<section class="dingdan">
+			<div class="dianpu"><a href="#">店铺4</a><span>交易成功</span></div>
+			<div class="shangpin">
+				<a href="#"><img src="../img/59.jpg"/></a>
+				<a class="mingzi" href="#">精致斑马纹墨绿色无袖连体修身裙</a>
+				<span class="jiage">￥<span>998</span></span>
+				<span class="shuliang">x<span>1</span></span>
+			</div>
+			<div class="shangpin">
+				<a href="#"><img src="../img/59.jpg"/></a>
+				<a class="mingzi" href="#">精致斑马纹墨绿色无袖连体修身裙</a>
+				<span class="jiage">￥<span>998</span></span>
+				<span class="shuliang">x<span>3</span></span>
+			</div>
+			<div class="heji"><span class="he">共一件商品,合计：￥<span>100</span></span></div>
+			<div class="fukan">
+				<button class="zhifu">付款</button>
+				<button class="del">删除订单</button>
+				<button class="wuliu">查看物流</button>
+			</div>
+		</section>
+		<section style="height: 90px;width: 100%;margin-top: 110px;text-align: center;">
+			无更多订单
+		</section>
+		<nav class="menu">
+			<div>
+				<a href="#" class="iconfont icon-shouye"></a><br />
+				<span><a href="#">首页</a></span>
+			</div>
+			<div>
+				<a href="#" class="iconfont icon-jifen"></a><br />
+				<span><a href="#">积分区</a></span>
+			</div>
+			<div>
+				<a href="#" class="iconfont icon-class"></a><br />
+				<span><a href="#">分类</a></span>
+			</div>
+			<div>
+				<a href="#" class="iconfont icon-gouwuche32pt"></a><br />
+				<span><a href="#">购物车</a></span>
+			</div>
+			<div>
+				<a href="personal_center.html" class="iconfont icon-icon-pscenter"></a><br />
+				<span><a href="personal_center.html">个人中心</a></span>
+			</div>
+		</nav>
+		<div class="fix">Top</div>
+		<nav class="list">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">积分区</a></li>
+				<li><a href="my_orders.html">我的订单</a></li>
+				<li><a href="perfect_information.html">完善资料</a></li>
+				<li><a href="#">分类</a></li>
+				<li><a href="#">购物车</a></li>
+				<li><a href="personal_center.html">个人中心</a></li>
+			</ul>
+		</nav>
+	</body>
+</html>
