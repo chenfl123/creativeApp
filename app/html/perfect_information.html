@@ -8,96 +8,20 @@
 		<link rel="stylesheet" href="../dist/css/perfect_information.css" />
 		<link rel="stylesheet" href="../font/iconfont.css" />
 		<script type="text/javascript" src="../assets/jquery-1.12.0.js" ></script>
-		<script>
-			$(function(){
-				$name = $("section>p>.name");
-				$phone = $("section>p>.phone");
-				$sheng = $("section>.dizhi>div>.sheng");
-				$shi = $("section>.dizhi>div>.shi");
-				$xian = $("section>.dizhi>div>.xian");
-				$dizhi = $("section>.dizhi>div>input");
-				$btn = $(".sub button");
-				$list = $(".list");
-				$lei = $(".icon-iconfenlei");
-				
-				$name.on("blur",function(){
-					if($name.val() == ""){
-						$name.val("请输入您的昵称!");
-						$name.addClass("active");
-					}else if($name.val() !== "请输入您的昵称!"){
-						$name.removeClass("active");
-					}
-				});
-				$phone.on("blur",function(){
-					if($phone.val() == ""){
-						$phone.val("请输入您的手机号!");
-						$phone.addClass("active");
-					}
-					else if(!/^[1]\d{10}$/.test($phone.val())){
-						$phone.val("请输入正确手机号!");
-						$phone.addClass("active");
-					}else{
-						$phone.removeClass("active");
-					}
-				});
-				$sheng.on("blur",function(){
-					if($sheng.val() == "选择省"){
-						$sheng.addClass("active");
-					}else{
-						$sheng.removeClass("active");
-					}
-				});
-				$shi.on("blur",function(){
-					if($shi.val() == "选择市"){
-						$shi.addClass("active");
-					}else{
-						$shi.removeClass("active");
-					}
-				});
-				$xian.on("blur",function(){
-					if($xian.val() == "选择区/县"){
-						$xian.addClass("active");
-					}else{
-						$xian.removeClass("active");
-					}
-				});
-				$dizhi.on("blur",function(){
-					if($dizhi.val() == ""){
-						$dizhi.val("请输入您的地址!")
-						$dizhi.addClass("active");
-					}else if($dizhi.val() !== "请输入您的地址!"){
-						$dizhi.removeClass("active");
-					}
-				});
-				
-				$btn.on("click",function(){
-					var is = ($name.val() == "") || ($name.val() == "请输入您的昵称!") || ($phone.val() == "") || ($phone.val() == "请输入您的手机号!") || ($phone.val() == "请输入正确手机号!") || ($sheng.val() == "选择省") || ($shi.val() == "选择市") || ($xian.val() == "选择区/县") || ($dizhi.val() == "") || ($dizhi.val() == "请输入您的地址!");
-					if(is){
-						alert("请完善信息")
-					}else{
-						alert("提交成功")
-					}
-				});
-			
-				$list.hide();
-//				$(window).on("click",function(){
-//					$list.hide(500);
-//				})
-				$lei.on("click",function(){
-					$list.slideToggle(500);
-				});
-			})
-		</script>
+		<script src="../js/perfect_information.js"></script>
 	</head>
 	<body>
+		<!--我的订单，头部-->
 		<header class="header">
 			<div class="zuo iconfont icon-houdongfangiconfont23"></div>
 			<h1>完善我的资料</h1>
 			<div class="fenlei iconfont icon-iconfenlei"></div>
 		</header>
+		<!--完善信息-->
 		<section>
 			<p><label>昵称</label><input class="name" type="text" /></p>
 			<p><label>手机号码</label><input class="phone" type="text" /></p>
+			<!--省、市、县-->
 			<div class="dizhi"><label>收货地址</label>
 				<div>
 					<select class="sheng" name="省">
@@ -132,39 +56,42 @@
 				</div>
 			</div>
 		</section>
+		<!--提交-->
 		<div class="sub">
 			<button>提交</button>
 		</div>
+		<!--底部导航菜单-->
 		<nav class="menu">
 			<div>
-				<a href="#" class="iconfont icon-shouye"></a><br />
-				<span><a href="#">首页</a></span>
+				<a href="index.html" class="iconfont icon-shouye"></a><br />
+				<span><a href="index.html">首页</a></span>
 			</div>
 			<div>
-				<a href="#" class="iconfont icon-jifen"></a><br />
-				<span><a href="#">积分区</a></span>
+				<a href="banking.html" class="iconfont icon-jifen"></a><br />
+				<span><a href="banking.html">积分区</a></span>
 			</div>
 			<div>
-				<a href="#" class="iconfont icon-class"></a><br />
-				<span><a href="#">分类</a></span>
+				<a href="pagekind.html" class="iconfont icon-class"></a><br />
+				<span><a href="pagekind.html">分类</a></span>
 			</div>
 			<div>
-				<a href="#" class="iconfont icon-gouwuche32pt"></a><br />
-				<span><a href="#">购物车</a></span>
+				<a href="shopcar.html" class="iconfont icon-gouwuche32pt"></a><br />
+				<span><a href="shopcar.html">购物车</a></span>
 			</div>
 			<div>
 				<a href="personal_center.html" class="iconfont icon-icon-pscenter"></a><br />
 				<span><a href="personal_center.html">个人中心</a></span>
 			</div>
 		</nav>
+		<!--点击头部，展开导航列表-->
 		<nav class="list">
 			<ul>
-				<li><a href="#">首页</a></li>
-				<li><a href="#">积分区</a></li>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="banking.html">积分区</a></li>
 				<li><a href="my_orders.html">我的订单</a></li>
 				<li><a href="perfect_information.html">完善资料</a></li>
-				<li><a href="#">分类</a></li>
-				<li><a href="#">购物车</a></li>
+				<li><a href="pagekind.html">分类</a></li>
+				<li><a href="shopcar.html">购物车</a></li>
 				<li><a href="personal_center.html">个人中心</a></li>
 			</ul>
 		</nav>
