@@ -7,11 +7,13 @@
 		<script src="../js/jquery-2.1.1.js"></script>
 		<script src="../js/jquery.mobilemin.js"></script>
 		<script src="../js/swiper.min.js"></script>
+		<script src="../js/lazyload.js"></script>
 		<script src="../js/myjs.js"></script>
 		<link rel="stylesheet" type="text/css" href="../css/jquery.mobilemin.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
 		<link rel="stylesheet" type="text/css" href="../font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
 	</head>
 	<body>
@@ -99,11 +101,25 @@
 						</li>
 					</ul>-->
 				</div>
+				<!--<div class="lazyload">
+					<img class="lazy" data-original="../img/1.jpg" />
+					<img class="lazy" data-original="../img/2.jpg" />
+					<img class="lazy" data-original="../img/3.jpg" />
+					<img class="lazy" data-original="../img/4.jpg" />
+					<img class="lazy" data-original="../img/5.jpg" />
+					<img class="lazy" data-original="../img/6.jpg" />
+					<img class="lazy" data-original="../img/7.jpg" />
+					<img class="lazy" data-original="../img/8.jpg" />
+					<img class="lazy" data-original="../img/9.jpg" />
+					<img class="lazy" data-original="../img/1.jpg" />
+					<img class="lazy" data-original="../img/2.jpg" />
+					<img class="lazy" data-original="../img/3.jpg" />
+				</div>-->
 			</div>
 			<div data-role="footer" data-position="fixed" class="footer">
 				<ul>
 		    		<li>
-		    			<a href="index.html">
+		    			<a data-ajax="false" href="index.html">
 		    				<i class="iconfont">&#xe61a;</i>
 		    				<div class="name">首页</div>
 		    			</a>
@@ -121,13 +137,13 @@
 		    			</a>
 		    		</li>
 		    		<li>
-		    			<a href="pagebuy.html">
+		    			<a data-ajax="false" href="shopcar.html">
 		    				<i class="iconfont">&#x3440;</i>
 		    				<div class="name">购物车</div>
 		    			</a>
 		    		</li>
 		    		<li>
-		    			<a href="pageMine.html">
+		    			<a data-ajax="false"  href="personal_center.html">
 		    				<i class="iconfont">&#xe600;</i>
 		    				<div class="name">个人中心</div>
 		    			</a>
@@ -136,9 +152,13 @@
 			</div>
 		</div>
 		
+		<script>
+			$(document).ready(function(){
+				$("img").lazyload({effect : "fadeIn"});
+			})
+		</script>
 		
-		
-		
+	</body>	
 		
 		
 		
