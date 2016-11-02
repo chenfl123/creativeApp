@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded",function(){
-	
+	//加载金库内容
 	$.ajax({
 		type:"get",
 		url:"../dist/js/records.json",
@@ -30,4 +30,8 @@ document.addEventListener("DOMContentLoaded",function(){
 		}
 		
 	});
+	
+	//点击菜单事件
+	
+	
 });
