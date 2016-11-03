@@ -30,10 +30,13 @@ $(document).on("pageinit","#pagehome",function(){
 			success:function(res){
 			console.log(res);
 			$.each(res,function(idx,item){
-				var $li2 = $('<li/>').html('<img src="'+item.imgurl+'"/>');					
+				var $li2 = $('<li/>').html('<img data-original="'+item.imgurl+'"/>');					
 				$li2.appendTo($ul2);
 			});
 			$pagehome_show.append($ul2);
+			$("img").lazyload({
+				effect:"fadeIn"
+			})
 		}
 	});	
 	//首页商品展示懒加载三
@@ -46,7 +49,8 @@ $(document).on("pageinit","#pagehome",function(){
 			console.log(res);
 			$.each(res,function(idx,item){		
 				var $li3 = $('<li/>');
-				var $img = $('<img/>').attr({src:item.imgurl})
+//				var $img = $('<img/>').attr({src:item.imgurl})
+				var $img = $('<img data-original="'+item.imgurl+'"/> ')
 				var $p1  = $('<p/>').html("津率享红华宁香平衡液 150ml")
 				var $p2  = $('<p/>').html("￥120")
 				$img.appendTo($li3)
@@ -55,6 +59,9 @@ $(document).on("pageinit","#pagehome",function(){
 				$li3.appendTo($ul3);
 			});
 			$pagehome_show.append($ul3);
+			$("img").lazyload({
+				effect:"fadeIn"
+			})
 		}
 	});
 	
