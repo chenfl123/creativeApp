@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
+
     var $addcar = $('.addcar');
     var $number = $('.number');
     var $pay = $('.pay');
@@ -89,3 +90,4 @@ rest();
     }
 
 })
+
