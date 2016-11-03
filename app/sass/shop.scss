@@ -1,18 +1,6 @@
-.shop_header {
-  background: #80f;
-  color: #fff;
-  padding: 12px;
-  .class {
-    text-align: right;
-  }
-  .title {
-    text-align: center;
-  }
-}
-
 .shop_content {
   display: flex;
-  /*padding: 5px 0  25px 0;*/
+ 
   .list {
     width: 100%;
     li {
@@ -53,33 +41,6 @@
       img {
         width: 60px;
         height: 60px;
-      }
-    }
-  }
-}
-
-.shop_footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  left: 0;
-  right: 0;
-  nav {
-    display: flex;
-    background: #80f;
-    a {
-      flex: 1;
-      text-decoration: none;
-      color: #fff;
-      text-align: center;
-      padding: 10px 0;
-      &:nth-child(1) {
-        background: #fff;
-        border-top: #f0f 0.1em solid;
-        color: #999;
-      }
-      &:nth-child(2) {
-        background: #f0f;
       }
     }
   }

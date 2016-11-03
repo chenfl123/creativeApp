@@ -1,23 +1,27 @@
-
-
 .shop_header .title span.active { background: #fff; padding: 18px 3px; color: #999; }
 
 .show img { width: 100%; }
 
-.d_show img {  width: 300px; height: 300px; text-align: center; }
+.d_show img { width: 300px; height: 300px; text-align: center; }
 
 .detail .price { color: red; font-size: 1.5em; }
 
+.box { background: #FFFDEF; }
 
+.comment li { padding: 0 10px; margin: 20px 0; background: lightgoldenrodyellow; }
 
-	.box{background: #FFFDEF;}
-  .comment li{padding: 0 10px;margin: 20px 0;background: lightgoldenrodyellow;}
-  .comment .comment_user{border-bottom: 1px solid silver;display: flex;line-height: 30px;}
-  .comment .comment_user span{flex:1;justify-content: center;align-items: center;text-align: center;}
-   .comment .comment_user span>img{width: 30px;height: 30px;border-radius:50%;}
-    .comment .comment_user em{flex:3 ; text-decoration: none;}
-    .comment .comment_user p{ flex:6;color: silver;}
-    .comment .star{font-weight: 600;line-height: 20px;}
-    .comment_text{font-weight: 600;line-height: 20px;}
-    .comment .shopTime{color: silver;line-height: 20px;}
+.comment .comment_user { border-bottom: 1px solid silver; display: flex; line-height: 30px; }
 
+.comment .comment_user span { flex: 1; justify-content: center; align-items: center; text-align: center; }
+
+.comment .comment_user span > img { width: 30px; height: 30px; border-radius: 50%; }
+
+.comment .comment_user em { flex: 3; text-decoration: none; }
+
+.comment .comment_user p { flex: 6; color: silver; }
+
+.comment .star { font-weight: 600; line-height: 20px; }
+
+.comment_text { font-weight: 600; line-height: 20px; }
+
+.comment .shopTime { color: silver; line-height: 20px; }

@@ -1,33 +1,17 @@
-.shop_header {
-  background: #80f;
-  color: #fff;
-  padding: 12px;
-  .class {
-    text-align: right;
-  }
-  .title {
-    text-align: center;
-    span.active {
-      background: #fff;
-      padding: 18px 3px;
-      color: #000;
-    }
-  }
+.shop_header .title span.active {
+  background: #fff;
+  padding: 18px 3px;
+  color: #999;
 }
 
 .show img {
   width: 100%;
 }
 
-.d_show {
-  display: flex;
-  justify-content: center;
-  img {
-    flex: 1;
-    width: 300px;
-    height: 300px;
-    text-align: center;
-  }
+.d_show img {
+  width: 300px;
+  height: 300px;
+  text-align: center;
 }
 
 .detail .price {
@@ -35,40 +19,52 @@
   font-size: 1.5em;
 }
 
-.shop_footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  left: 0;
-  right: 0;
-  nav {
+.box {
+  background: #FFFDEF;
+}
+
+.comment {
+  li {
+    padding: 0 10px;
+    margin: 20px 0;
+    background: lightgoldenrodyellow;
+  }
+  .comment_user {
+    border-bottom: 1px solid silver;
     display: flex;
-    background: #80f;
-    a {
+    line-height: 30px;
+    span {
       flex: 1;
-      text-decoration: none;
-      color: #fff;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      padding: 10px 0;
-      &:nth-child(1) {
-        background: #fff;
-        border-top: #f0f 0.1em solid;
-        color: #80f;
-        position: relative;
-        .number {
-          position: absolute;
-          right: 20px;
-          top: 10px;
-          width: 20px;
-          height: 20px;
-          border-radius: 50%;
-          background: #80f;
-          color: #fff;
-        }
-      }
-      &:nth-child(2) {
-        background: #f0f;
+      > img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
       }
     }
+    em {
+      flex: 3;
+      text-decoration: none;
+    }
+    p {
+      flex: 6;
+      color: silver;
+    }
   }
+  .star {
+    font-weight: 600;
+    line-height: 20px;
+  }
+}
+
+.comment_text {
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.comment .shopTime {
+  color: silver;
+  line-height: 20px;
 }

@@ -1,213 +1,50 @@
-body {
-	background-color: #f1f5f6;
-	font: "微软雅黑";
-}
+@charset "UTF-8";
+body { background-color: #f1f5f6; font: "微软雅黑"; }
 
-.header1 {
-	display: flex;
-	height: 40px;
-	background-color: #8e488e;
-	color: white;
-	align-items: center;
-	text-align: center;
-	padding: 0 20px;
-	position: fixed;
-	top: 0;
-	width: 92%;
-	z-index: 12;
-}
+.header1 { display: flex; height: 40px; background-color: #8e488e; color: white; align-items: center; text-align: center; padding: 0 20px; position: fixed; top: 0; width: 92%; z-index: 12; }
 
-.header1 a i {
-	color: white;
-}
+.header1 a i { color: white; }
 
+.header1 h1 { flex: 5; font-size: 16px; /*margin-bottom: 18px;*/ }
 
-/*
-.header1 .zuo {
-	flex: 1;
-	font-size: 18px;
-}*/
+.list1 { display: flex; text-align: center; padding: 10px 0px; background-color: white; border-bottom: solid 1px #ccc; position: fixed; top: 37px; width: 100%; z-index: 12; }
 
-.header1 h1 {
-	flex: 5;
-	font-size: 16px;
-	/*margin-bottom: 18px;*/
-}
+.list1 a { flex: 1; height: 30px; line-height: 30px; border-right: solid 1px #ccc; color: #16263d; }
 
+.list1 a:nth-child(5) { border: none; }
 
-/*.header1 .fenlei {
-	font-size: 18px;
-	flex: 1;
-}*/
+.dingdan { background-color: white; margin: 50px 0 -30px 0; z-index: 1; }
 
-.list1 {
-	display: flex;
-	text-align: center;
-	padding: 10px 0px;
-	background-color: white;
-	border-bottom: solid 1px #ccc;
-	position: fixed;
-	top: 37px;
-	width: 100%;
-	z-index: 12;
-}
+.dingdan .dianpu { display: flex; padding: 10px; border-bottom: solid 1px #ccc; }
 
-.list1 a {
-	flex: 1;
-	height: 30px;
-	line-height: 30px;
-	border-right: solid 1px #ccc;
-	color: #16263d;
-}
+.dingdan .dianpu a { flex: 1; color: #16263d; }
 
-.list1 a:nth-child(5) {
-	border: none;
-}
+.dingdan .dianpu span { flex: 1; text-align: right; color: #ec349a; }
 
-.dingdan {
-	background-color: white;
-	margin: 50px 0 -30px 0;
-	z-index: 1;
-}
+.dingdan .shangpin { padding: 10px; position: relative; border-bottom: solid 1px #ccc; }
 
-.dingdan .dianpu {
-	display: flex;
-	padding: 10px;
-	border-bottom: solid 1px #ccc;
-}
+.dingdan .shangpin img { height: 90px; }
 
-.dingdan .dianpu a {
-	flex: 1;
-	color: #16263d;
-}
+.dingdan .shangpin .mingzi { color: #000; position: absolute; top: 20px; left: 80px; }
 
-.dingdan .dianpu span {
-	flex: 1;
-	text-align: right;
-	color: #ec349a;
-}
+.dingdan .shangpin .jiage { color: #ec349a; position: absolute; top: 70px; left: 80px; }
 
-.dingdan .shangpin {
-	padding: 10px;
-	position: relative;
-	border-bottom: solid 1px #ccc;
-}
+.dingdan .shangpin .shuliang { position: absolute; top: 70px; right: 20px; }
 
-.dingdan .shangpin img {
-	height: 90px;
-}
+.dingdan .heji { display: flex; text-align: right; background: white; padding: 10px; border-bottom: solid 1px #ccc; }
 
-.dingdan .shangpin .mingzi {
-	color: #000;
-	position: absolute;
-	top: 20px;
-	left: 80px;
-}
+.dingdan .heji .he { flex: 1; text-align: right; }
 
-.dingdan .shangpin .jiage {
-	color: #ec349a;
-	position: absolute;
-	top: 70px;
-	left: 80px;
-}
+.dingdan .fukan { padding: 10px; text-align: right; background: white; }
 
-.dingdan .shangpin .shuliang {
-	position: absolute;
-	top: 70px;
-	right: 20px;
-}
+.dingdan .fukan button { padding: 10px; border-radius: 5px; border: none; /*margin: 5px;*/ background-color: white; border: solid 1px #ccc; }
 
-.dingdan .heji {
-	display: flex;
-	text-align: right;
-	background: white;
-	padding: 10px;
-	border-bottom: solid 1px #ccc;
-}
+.fix { width: 45px; height: 45px; background-color: #d02a82; border-radius: 50%; position: fixed; right: 50px; bottom: 120px; color: white; line-height: 45px; text-align: center; font-size: 20px; }
 
-.dingdan .heji .he {
-	flex: 1;
-	text-align: right;
-}
+.list { position: fixed; right: 10px; top: 38px; width: 30%; padding: 0; z-index: 20; }
 
-.dingdan .fukan {
-	padding: 10px;
-	text-align: right;
-	background: white;
-}
+.list ul { width: 100%; }
 
-.dingdan .fukan button {
-	padding: 10px;
-	border-radius: 5px;
-	border: none;
-	/*margin: 5px;*/
-	background-color: white;
-	border: solid 1px #ccc;
-}
+.list ul li { height: 40px; width: 100%; background-color: #595f65; border-bottom: solid 1px #CCCCCC; line-height: 40px; text-align: center; }
 
-
-/*.menu {
-	position: fixed;
-	bottom: 0;
-	height: 55px;
-	border-top: solid 1px #e7eaec;
-	background-color: white;
-	display: flex;
-	width: 100%;
-	align-items: center;
-	text-align: center;
-}
-
-.menu div {
-	flex: 1;
-	color: #555;
-}
-
-.menu>div:hover a {
-	color: #8e488e;
-}
-
-.menu div:hover span a {
-	color: #8e488e;
-}*/
-
-.fix {
-	width: 45px;
-	height: 45px;
-	background-color: #d02a82;
-	border-radius: 50%;
-	position: fixed;
-	right: 50px;
-	bottom: 120px;
-	color: white;
-	line-height: 45px;
-	text-align: center;
-	font-size: 20px;
-}
-
-.list {
-	position: fixed;
-	right: 10px;
-	top: 38px;
-	width: 30%;
-	padding: 0;
-	z-index: 20;
-}
-
-.list ul {
-	width: 100%;
-}
-
-.list ul li {
-	height: 40px;
-	width: 100%;
-	background-color: #595f65;
-	border-bottom: solid 1px #CCCCCC;
-	line-height: 40px;
-	text-align: center;
-}
-
-.list ul li a {
-	color: white;
-	border: none;
-}
+.list ul li a { color: white; border: none; }

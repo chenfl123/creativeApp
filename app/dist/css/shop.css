@@ -1,26 +1,23 @@
+.shop_content { display: flex; }
 
-.shop_content { display: flex; /*padding: 5px 0  25px 0;*/ }
- 
 .shop_content .list { width: 100%; }
 
 .shop_content .list li { border-bottom: 0.1em solid #dadada; display: flex; align-items: center; justify-content: center; }
 
 .shop_content .list li img, .shop_content .list li #checks, .shop_content .list li .conf, .shop_content .list li .last { flex: 1; padding: 10px; }
 
-.shop_content .list li #checks {width: 1.22em;height: 1.2em; text-align: center; }
+.shop_content .list li #checks { text-align: center; }
 
-.shop_content .list li .last { display: flex; font-size:1em;}
+.shop_content .list li .last { display: flex; }
 
 .shop_content .list li .last input { border: none; text-align: center; border-top: 0.1em solid #dadada; border-bottom: 0.1em solid #dadada; }
 
-.shop_content .list li .last a { padding: 0 6px; border: 0.1em solid #dadada; }
+.shop_content .list li .last span { padding: 0 6px; border: 0.1em solid #dadada; }
 
-.shop_content .list li .last a:last-child { border: none; }
+.shop_content .list li .last span:last-child { border: none; }
 
 .shop_content .list li .conf { flex: 3; color: red; }
 
 .shop_content .list li .conf p:first-child { color: #333; }
 
 .shop_content .list li img { width: 60px; height: 60px; }
-
-

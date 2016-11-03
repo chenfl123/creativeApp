@@ -1,162 +1,37 @@
-.header1 {
-	display: flex;
-	height: 40px;
-	background-color: #8e488e;
-	color: white;
-	align-items: center;
-	text-align: center;
-	padding: 0 20px;
-}
+.header1 { display: flex; height: 40px; background-color: #8e488e; color: white; align-items: center; text-align: center; padding: 0 20px; }
 
-.header1 a i {
-	color: white;
-}
+.header1 a i { color: white; }
 
+.header1 h1 { flex: 5; font-size: 16px; /*margin-bottom: 18px;*/ }
 
-/*
-.header1 .zuo {
-	flex: 1;
-	font-size: 18px;
-}*/
+section p { display: flex; height: 30px; border: solid 1px #d5d5d5; margin: 10px 30px; border-radius: 3px; }
 
-.header1 h1 {
-	flex: 5;
-	font-size: 16px;
-	/*margin-bottom: 18px;*/
-}
+section label { flex: 1; background-color: #eee; line-height: 30px; color: #555; text-align: center; border-right: solid 1px #d5d5d5; }
 
+section p input { flex: 3; border: none; }
 
-/*.header1 .fenlei {
-	font-size: 18px;
-	flex: 1;
-}*/
+section .dizhi { display: flex; height: 170px; border: solid 1px #d5d5d5; margin: 10px 30px; border-radius: 3px; }
 
-section p {
-	display: flex;
-	height: 30px;
-	border: solid 1px #d5d5d5;
-	margin: 10px 30px;
-	border-radius: 3px;
-}
+section .dizhi label { line-height: 170px; }
 
-section label {
-	flex: 1;
-	background-color: #eee;
-	line-height: 30px;
-	color: #555;
-	text-align: center;
-	border-right: solid 1px #d5d5d5;
-}
+section .dizhi div { flex: 3; }
 
-section p input {
-	flex: 3;
-	border: none;
-}
+section .dizhi select { width: 100%; border: none; height: 40px; border-bottom: solid 1px #d5d5d5; color: #999999; }
 
-section .dizhi {
-	display: flex;
-	height: 170px;
-	border: solid 1px #d5d5d5;
-	margin: 10px 30px;
-	border-radius: 3px;
-}
+section .dizhi input { width: 100%; border: none; height: 47px; }
 
-section .dizhi label {
-	line-height: 170px;
-}
+.sub { padding: 10px 30px; }
 
-section .dizhi div {
-	flex: 3;
-}
+.sub button { width: 100%; height: 34px; background-color: #8e488e; color: white; font-size: 16px; border: none; border-radius: 5px; }
 
-section .dizhi select {
-	width: 100%;
-	border: none;
-	height: 40px;
-	border-bottom: solid 1px #d5d5d5;
-	color: #999999;
-}
+.active { color: red; color: red; }
 
-section .dizhi input {
-	width: 100%;
-	border: none;
-	height: 47px;
-}
+section .dizhi div .active { color: red; }
 
-.sub {
-	padding: 10px 30px;
-}
+.list { position: fixed; right: 10px; top: 40px; width: 30%; padding: 0; }
 
-.sub button {
-	width: 100%;
-	height: 34px;
-	background-color: #8e488e;
-	color: white;
-	font-size: 16px;
-	border: none;
-	border-radius: 5px;
-}
+.list ul { width: 100%; }
 
-.active {
-	color: red;
-}
+.list ul li { height: 40px; width: 100%; background-color: #595f65; border-bottom: solid 1px #CCCCCC; line-height: 40px; text-align: center; }
 
-
-/*.menu {
-	position: absolute;
-	bottom: 0;
-	height: 55px;
-	border-top: solid 1px #e7eaec;
-	background-color: white;
-	display: flex;
-	width: 100%;
-	align-items: center;
-	text-align: center;
-}
-
-.menu div {
-	flex: 1;
-	color: #555;
-}
-
-.menu>div:hover a {
-	color: #8e488e;
-}
-
-.menu div:hover span a {
-	color: #8e488e;
-}*/
-
-.active {
-	color: red;
-}
-
-section .dizhi div .active {
-	color: red;
-}
-
-.list {
-	position: fixed;
-	right: 10px;
-	top: 40px;
-	width: 30%;
-	padding: 0;
-}
-
-.list ul {
-	width: 100%;
-}
-
-.list ul li {
-	height: 40px;
-	width: 100%;
-	background-color: #595f65;
-	border-bottom: solid 1px #CCCCCC;
-	line-height: 40px;
-	text-align: center;
-}
-
-.list ul li a {
-	color: white;
-	border: none;
-}
+.list ul li a { color: white; border: none; }

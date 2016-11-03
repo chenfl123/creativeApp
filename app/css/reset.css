@@ -5,7 +5,7 @@
 
 .shop_header .title { text-align: center; }
 
-/*尾部*/
+/*购物车，详情页评论的底部*/
 
 .shop_footer { position: fixed; bottom: 0; width: 100%; left: 0; right: 0; }
 
@@ -18,3 +18,4 @@
 .shop_footer nav a:nth-child(1) .number { position: absolute; right: 20px; top: 10px; width: 20px; height: 20px; border-radius: 50%; background: #80f; color: #fff; }
 
 .shop_footer nav a:nth-child(2) { background: #f0f; }
+

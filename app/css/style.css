@@ -5,4 +5,5 @@ img{display: block;}
 body{font-size: 1.2em;}
 ul, ol { list-style:none; } 
 
-a { color:#666; text-decoration:none;font-size: 1.2em; } 
+a { color:#666; text-decoration:none;font-size: 12px; } 
+span,label {font-size: 14px;}
