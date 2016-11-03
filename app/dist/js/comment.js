@@ -53,4 +53,14 @@ document.addEventListener("DOMContentLoaded",function(){
     	
     });
    
-})
+// 	//点击菜单事件
+//	$list = $(".list");
+//	$lei = $(".fenlei");
+//
+//	$list.hide();
+//	$lei.on("click", function() {
+//		$list.slideToggle(500);
+//		console.log("hah");
+//	});
+
+});
