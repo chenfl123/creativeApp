@@ -5,11 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
     var paynumber =0;
     var shopString = localStorage.getItem('shopString');
     shopString = shopString ? JSON.parse(shopString) : [];
-
+    
 // 创建购物车列表
     var $ul =$('<ul/>').addClass('list');
      $.each(shopString,function(idx, item) {
        if (item.id!=null) {
+        
         // 总价格
         paynumber += parseInt(item.price);
       	var $li =$('<li/>');
@@ -33,8 +34,10 @@ $('.reduce').on('singleTap',function(){
   var index=$(this).closest('li').index();
   if(shopString[index].number==1){
      shopString[index].number=1;
+   
   }else {
      shopString[index].number -=1;
+  $(this).siblings('input').val(shopString[index].number);
     localStorage.setItem('shopString',JSON.stringify(shopString));
   }
 })
@@ -43,6 +46,7 @@ $('.reduce').on('singleTap',function(){
 $('.add').on('singleTap',function(){
   var index=$(this).closest('li').index();
      shopString[index].number +=1;
+     $(this).siblings('input').val(shopString[index].number)
     localStorage.setItem('shopString',JSON.stringify(shopString));
   
 })
@@ -51,6 +55,7 @@ $('.delete').on('singleTap',function(){
   var index=$(this).closest('li').index();
      shopString.splice(index,1);
     localStorage.setItem('shopString',JSON.stringify(shopString));
+    $(this).closest('li').remove();
 })
 
 // 全选按钮

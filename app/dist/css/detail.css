@@ -9,6 +9,7 @@
 .detail .price { color: red; font-size: 1.5em; }
 
 
+
 	.box{background: #FFFDEF;}
   .comment li{padding: 0 10px;margin: 20px 0;background: lightgoldenrodyellow;}
   .comment .comment_user{border-bottom: 1px solid silver;display: flex;line-height: 30px;}
@@ -19,3 +20,4 @@
     .comment .star{font-weight: 600;line-height: 20px;}
     .comment_text{font-weight: 600;line-height: 20px;}
     .comment .shopTime{color: silver;line-height: 20px;}
+
