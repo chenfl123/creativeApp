@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>购物车</title>
     <link rel="stylesheet" href="../css/style.css">
-
     <link rel="stylesheet" href="../assets/bootstrap/bootstrap.css">
-
     <link rel="stylesheet" href="../dist/css/shop.css">
 
+<<<<<<< HEAD
 
 
 
     <link rel="stylesheet" href="../font/iconfont.css">
 
 
+=======
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+>>>>>>> aa3b18ccb938a1fc020cd63dc69e26e319f45df3
     <script src="../assets/zepto/zepto.js"></script>
     <script src="../assets/zepto/touch.js"></script>
       <script src="../js/shopcar.js"></script>
@@ -26,7 +29,7 @@
 <body>
 <div class="container-fluid">
     <div class="row shop_header">
-        <div class="col-xs-4"><span class="iconfont icon-houdongfangiconfont23"></span></div>
+        <div class="col-xs-4"><a href="detail.html" id="chang_a"><span class="iconfont icon-houdongfangiconfont23"></span></a></div>
      <div class="col-xs-4 title">购物车</div>
      <div class="col-xs-4 class"><span class="iconfont icon-iconfenlei"> </span></div>
 
@@ -37,10 +40,10 @@
     <footer class="shop_footer">
         <nav>
             <a href="#">
-                <input type="checkbox" checked>全选
+                <input class="checkall" type="checkbox" checked>全选
              </a>
             <a href="#">在线支付<span class="iconfont icon-houdongfangiconfont24"></span></a>
-            <a href="#">确认并支付<span class="pay"></span></a>
+            <a href="#">确认并支付 ( <span class="pay">00</span> )</a>
         </nav>
     </footer>
 </div>
