@@ -6,15 +6,7 @@ body { background-color: #f1f5f6; }
 
 .header1 h1 { flex: 5; font-size: 16px; }
 
-/*
-.header1 .zuo {
-	flex: 1;
-	font-size: 18px;
-}*/
-/*.header1 .fenlei {
-	font-size: 18px;
-	flex: 1;
-}*/
+
 .information { align-items: center; text-align: center; display: flex; height: 85px; background: linear-gradient(to right, #0d0208, #44090d, #6a3525); color: white; font-weight: bold; }
 
 .information .img { flex: 1; padding: 0 20px 0 20px; }
