@@ -1,0 +1,46 @@
+.borderno {
+  border-right: none;
+}
+
+.head {
+  display: flex;
+  line-height: 60px;
+  dl {
+    flex: 1;
+    line-height: 40px;
+    border-right: 1px solid silver;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+}
+
+.nav {
+  margin-top: 20px;
+  ul {
+    display: flex;
+  }
+  li {
+    flex: 1;
+    line-height: 40px;
+    border: 1px solid silver;
+    border-bottom: none;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+}
+
+.tabs {
+  ul {
+    display: flex;
+  }
+  li {
+    flex: 1;
+    line-height: 40px;
+    border: 1px solid silver;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+}

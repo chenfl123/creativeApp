@@ -1,10 +1,28 @@
 
 
 document.addEventListener('DOMContentLoaded',function(){
-
-
-
-
+  // å•†å“è½®æ’­å›¾
+var mySwiper2 = new Swiper('.swiper-container', {
+            // è‡ªåŠ¨æ’­æ”¾
+            autoplay: 5000,
+            loop: true,
+          
+        });
+	
+	//åˆ‡æ¢
+    $(".container-fluid .title span").first().on("click",function(){
+    	
+    	$(this).siblings().removeClass("active");
+    	$(this).first().addClass("active");
+    	
+    });
+     $(".container-fluid .title span").last().on("click",function(){
+    
+    	$(this).siblings().removeClass("active");
+    	$(this).last().addClass("active");
+    	
+    });
+    
 
   var $addcar= $('.addcar');
   var $number =$('.number');
@@ -12,9 +30,11 @@ document.addEventListener('DOMContentLoaded',function(){
 
   var shopString= localStorage.getItem('shopString');
   shopString=shopString ?JSON.parse(shopString):[];
-// arrÊÕ¼¯ËùÓĞ»ñÈ¡µ½µÄÉÌÆ·id
+
+//arræ•°ç»„æ”¶é›†æ‰€æœ‰å•†å“id
   var arr=[];
-// carnum¹ºÎï³µÏÔÊ¾ÊıÁ¿
+// carnumè´­ç‰©è½¦æ•°é‡
+
   var carnum=0;
   if (shopString!=[]) {
   	 $.each(shopString,function(idx, item){
@@ -25,7 +45,8 @@ document.addEventListener('DOMContentLoaded',function(){
 
   	$number.html(carnum);
 
-  	// ¼ÓÈë¹ºÎï³µµ¥»÷ÊÂ¼ş
+  	// åŠ å…¥è´­ç‰©è½¦è®¾ç½®æ•°æ®
+
 	$addcar.on('singleTap',function(){
 		var goods={};
 		var Id =$('.d_show img').attr('id');
