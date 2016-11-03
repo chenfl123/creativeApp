@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -7,61 +8,76 @@
 		<link rel="stylesheet" href="../css/style.css" />
 		<link rel="stylesheet" href="../dist/css/perfect_information.css" />
 		<link rel="stylesheet" href="../font/iconfont.css" />
-		<script type="text/javascript" src="../assets/jquery-1.12.0.js" ></script>
+		<link rel="stylesheet" href="../css/common.css" />
+		<!--<link rel="stylesheet" href="../css/bootstrap.min.css" />-->
+		<!--<link rel="stylesheet" href="../css/jquery.mobilemin.css" />-->
+		<script src="../assets/jquery-1.12.0.js"></script>
 		<script src="../js/perfect_information.js"></script>
+		<!--<script src="../js/jquery.mobilemin.js"></script>-->
 	</head>
+
 	<body>
-		<!--我的订单，头部-->
-		<header class="header">
+		<div class="Page">
+			<!--我的订单，头部-->
+			<!--<header class="header">
 			<div class="zuo iconfont icon-houdongfangiconfont23"></div>
 			<h1>完善我的资料</h1>
 			<div class="fenlei iconfont icon-iconfenlei"></div>
-		</header>
-		<!--完善信息-->
-		<section>
-			<p><label>昵称</label><input class="name" type="text" /></p>
-			<p><label>手机号码</label><input class="phone" type="text" /></p>
-			<!--省、市、县-->
-			<div class="dizhi"><label>收货地址</label>
-				<div>
-					<select class="sheng" name="省">
-						<option value="选择省">选择省</option>
-						<option value="北京市">北京市</option>
-						<option value="上海市">上海市</option>
-						<option value="天津市">天津市</option>
-						<option value="重庆市">重庆市</option>
-						<option value="河南省">河南省</option>
-						<option value="广东省">广东省</option>
-					</select>
-					<select class="shi" name="市">
-						<option value="选择市">选择市</option>
-						<option value="濮阳市">濮阳市</option>
-						<option value="洛阳市">洛阳市</option>
-						<option value="安阳市">安阳市</option>
-						<option value="信阳市">信阳市</option>
-						<option value="南阳市">南阳市</option>
-						<option value="焦作市">焦作市</option>
-						<option value="开封市">开封市</option>
-					</select>
-					<select class="xian" name="区/县">
-						<option value="选择区/县">选择区/县</option>
-						<option value="华龙区">华龙区</option>
-						<option value="濮阳县">濮阳县</option>
-						<option value="南乐县">南乐县</option>
-						<option value="清丰县">清丰县</option>
-						<option value="台前县">台前县</option>
-						<option value="范县">范县</option>
-					</select>
-					<input type="text" placeholder="详细地址" />
+			</header>-->
+			<!--nav菜单-->
+			<header class="header1">
+				<a href="#">
+					<i class="iconfont">&#xe624;</i>
+				</a>
+				<h1>完善我的资料</h1>
+				<a href="#">
+					<i class="iconfont fenlei">&#xe662;</i>
+				</a>
+			</header>
+			<section>
+				<p><label>昵称</label><input class="name" type="text" /></p>
+				<p><label>手机号码</label><input class="phone" type="text" /></p>
+				<!--省、市、县-->
+				<div class="dizhi"><label>收货地址</label>
+					<div>
+						<select class="sheng" name="省">
+							<option value="选择省">选择省</option>
+							<option value="北京市">北京市</option>
+							<option value="上海市">上海市</option>
+							<option value="天津市">天津市</option>
+							<option value="重庆市">重庆市</option>
+							<option value="河南省">河南省</option>
+							<option value="广东省">广东省</option>
+						</select>
+						<select class="shi" name="市">
+							<option value="选择市">选择市</option>
+							<option value="濮阳市">濮阳市</option>
+							<option value="洛阳市">洛阳市</option>
+							<option value="安阳市">安阳市</option>
+							<option value="信阳市">信阳市</option>
+							<option value="南阳市">南阳市</option>
+							<option value="焦作市">焦作市</option>
+							<option value="开封市">开封市</option>
+						</select>
+						<select class="xian" name="区/县">
+							<option value="选择区/县">选择区/县</option>
+							<option value="华龙区">华龙区</option>
+							<option value="濮阳县">濮阳县</option>
+							<option value="南乐县">南乐县</option>
+							<option value="清丰县">清丰县</option>
+							<option value="台前县">台前县</option>
+							<option value="范县">范县</option>
+						</select>
+						<input type="text" placeholder="详细地址" />
+					</div>
 				</div>
+			</section>
+			<!--提交-->
+			<div class="sub">
+				<button>提交</button>
 			</div>
-		</section>
-		<!--提交-->
-		<div class="sub">
-			<button>提交</button>
-		</div>
-		<!--底部导航菜单-->
-		<nav class="menu">
+			<!--底部导航菜单-->
+			<!--<nav class="menu">
 			<div>
 				<a href="index.html" class="iconfont icon-shouye"></a><br />
 				<span><a href="index.html">首页</a></span>
@@ -82,19 +98,68 @@
 				<a href="personal_center.html" class="iconfont icon-icon-pscenter"></a><br />
 				<span><a href="personal_center.html">个人中心</a></span>
 			</div>
-		</nav>
-		<!--点击头部，展开导航列表-->
-		<nav class="list">
-			<ul>
-				<li><a href="index.html">首页</a></li>
-				<li><a href="banking.html">积分区</a></li>
-				<li><a href="my_orders.html">我的订单</a></li>
-				<li><a href="perfect_information.html">完善资料</a></li>
-				<li><a href="pagekind.html">分类</a></li>
-				<li><a href="shopcar.html">购物车</a></li>
-				<li><a href="personal_center.html">个人中心</a></li>
-			</ul>
-		</nav>
+		</nav>-->
+			<!--点击头部，展开导航列表-->
+			<nav class="list">
+				<ul>
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="banking.html">积分区</a>
+					</li>
+					<li>
+						<a href="my_orders.html">我的订单</a>
+					</li>
+					<li>
+						<a href="perfect_information.html">完善资料</a>
+					</li>
+					<li>
+						<a href="pagekind.html">分类</a>
+					</li>
+					<li>
+						<a href="shopcar.html">购物车</a>
+					</li>
+					<li>
+						<a href="personal_center.html">个人中心</a>
+					</li>
+				</ul>
+			</nav>
+			<div data-role="footer" data-position="fixed" class="footer">
+				<ul>
+					<li>
+						<a href="index.html">
+							<i class="iconfont">&#xe61a;</i>
+							<div class="name">首页</div>
+						</a>
+					</li>
+					<li>
+						<a href="banking.html">
+							<i class="iconfont">&#xe680;</i>
+							<div class="name">积分区</div>
+						</a>
+					</li>
+					<li>
+						<a href="pagekind.html">
+							<i class="iconfont" data-transition="slide">&#xe662;</i>
+							<div class="name">分类</div>
+						</a>
+					</li>
+					<li>
+						<a href="shopcar.html">
+							<i class="iconfont">&#x3440;</i>
+							<div class="name">购物车</div>
+						</a>
+					</li>
+					<li>
+						<a href="personal_center.html">
+							<i class="iconfont">&#xe600;</i>
+							<div class="name">个人中心</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</body>
 
 </html>

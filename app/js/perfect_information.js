@@ -7,7 +7,7 @@ $(function() {
 	$dizhi = $("section>.dizhi>div>input");
 	$btn = $(".sub button");
 	$list = $(".list");
-	$lei = $(".icon-iconfenlei");
+	$lei = $(".fenlei");
 
 	$name.on("blur", function() {
 		if($name.val() == "") {

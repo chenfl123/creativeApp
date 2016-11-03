@@ -1,6 +1,6 @@
 $(function() {
 	$list = $(".list");
-	$lei = $(".icon-iconfenlei");
+	$lei = $(".fenlei");
 
 	$list.hide();
 	$lei.on("click", function() {
