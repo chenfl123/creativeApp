@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded",function(){
 	$lei.on("click", function() {
 		$list.slideToggle(500);
 		console.log("hah");
-	})
+	});
 
 	
 });
