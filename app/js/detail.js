@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded',function(){
 var mySwiper2 = new Swiper('.swiper-container', {
             // 自动播放
             autoplay: 5000,
-          
             loop: true,
           
         });
