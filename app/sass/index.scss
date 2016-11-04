@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.Page .iconback {
+  position: fixed;
+  bottom: 10vh;
+  right: 10vw;
+  color: #8E488E;
+  width: 5vw;
+  height: 10vh;
+}
+
+#iconback {
+  font-size: 50px;
+}
+
+#pagehome .footer li:nth-child(1) {
+  background: #8E488E;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+
+#jifen .footer li:nth-child(2), #pagekind .footer li:nth-child(3), #pagebuy .footer li:nth-child(4), #pageMine .footer li:nth-child(5) {
+  background: #8E488E;
+  a {
+    color: #fff;
+  }
+}
+
+#pagehome {
+  .header {
+    background: #8E488E;
+    h1 {
+      color: #fff;
+    }
+  }
+  .main {
+    .swiper-container {
+      width: 100vw;
+      height: 40vh;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .jingxuan, .nvzhuang {
+      width: 100vw;
+      height: auto;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .pagehome_show {
+      width: 98vw;
+      height: auto;
+      margin: 10px auto;
+      .pagehome_showlist {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        li {
+          flex: 1 1 45%;
+          height: 20vh;
+          margin: 5px 5px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .pagehome_showlist2 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        li {
+          flex: 1 1 100%;
+          height: 20vh;
+          margin: 5px 5px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .pagehome_showlist3 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        li {
+          flex: 1 1 100%;
+          height: 28vh;
+          margin: 5px 5px;
+          img {
+            width: 100%;
+            height: 21vh;
+          }
+          p {
+            height: 2vh;
+            &:nth-child(3) {
+              color: red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#pagekind {
+  .main {
+    background: #F1F5F6;
+  }
+  .main_leftlist {
+    margin-left: -15px;
+  }
+  .main_rightlist {
+    margin-left: -15px;
+    td {
+      width: 25vw;
+      height: 15vh;
+      background: #fff;
+      img {
+        width: 25vw;
+        height: 10vh;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+
+#chaoliuNV {
+  .main {
+    background: #F1F5F6;
+  }
+  .main_leftlist {
+    margin-left: -15px;
+    margin-left: -15px;
+  }
+  .main_rightlist td {
+    width: 25vw;
+    height: 15vh;
+    background: #fff;
+    img {
+      width: 25vw;
+      height: 10vh;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}
+
+#pageMine {
+  #myPanel {
+    width: 60vw;
+  }
+  .main {
+    min-height: 80vh;
+  }
+}

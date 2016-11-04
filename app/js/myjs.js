@@ -3,8 +3,9 @@ $(document).on("pageinit","#pagehome",function(){
 		direction : 'horizontal',
 		pagination : '.swiper-pagination',
 		loop:true,
-		autoplay : 3000,
+		autoplay : 3000
 	})
+	console.log('a')
 	//首页商品展示懒加载一
 	var $pagehome_show = $('.pagehome_show');
 	var $ul1 = $('<ul class="pagehome_showlist"></ul>');
@@ -66,8 +67,8 @@ $(document).on("pageinit","#pagehome",function(){
 	});
 	
 	
-})
-$(document).ready(function(){
+// })
+// $(document).ready(function(){
 	$(".iconback").hide()
 	$(window).scroll(function(){
 		console.log($(window).scrollTop())
