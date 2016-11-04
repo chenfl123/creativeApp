@@ -26,7 +26,7 @@
     <div class="row shop_header">
         <div class="col-xs-4"><a href="javascript:history.go(-1)" style="color:#fff;"><span class="iconfont icon-houdongfangiconfont23"></span></a></div>
      <div class="col-xs-4 title">购物车</div>
-     <div class="col-xs-4 class"><span class="iconfont icon-iconfenlei"> </span></div>
+     <div class="col-xs-4 class fenlei"><span class="iconfont icon-iconfenlei"> </span></div>
 
     </div>
     <section class="shop_content">
@@ -42,6 +42,42 @@
         </nav>
     </footer>
 </div>
+<nav class="List">
+                <ul>
+                    <li>
+                        <a href="index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="banking.html">积分区</a>
+                    </li>
+                    <li>
+                        <a href="my_orders.html">我的订单</a>
+                    </li>
+                    <li>
+                        <a href="perfect_information.html">完善资料</a>
+                    </li>
+                    <li>
+                        <a href="pagekind.html">分类</a>
+                    </li>
+                    <li>
+                        <a href="shopcar.html">购物车</a>
+                    </li>
+                    <li>
+                        <a href="personal_center.html">个人中心</a>
+                    </li>
+                </ul>
+            </nav>
+    <script>
+    document.addEventListener('DOMContentLoaded',function(){
+
+        $list = $(".List");
+        $lei = $(".fenlei");
+        $lei.on('singleTap', function() {
+            $list.toggle();
+        })
+
+    })
+    </script>
 </body>
 
 </html>
