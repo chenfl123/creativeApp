@@ -1,80 +1,77 @@
-.borderno {
-  border-right: none;
-}
-
-.head {
-  display: flex;
-  line-height: 60px;
-  dl {
-    flex: 1;
-    line-height: 40px;
-    border-right: 1px solid silver;
-    justify-content: center;
-    align-content: center;
-    margin: 10px 0;
-    text-align: center;
-    background: lightgoldenrodyellow;
-  }
-}
-
-.nav {
-  margin-top: 20px;
-  ul {
-    display: flex;
-  }
-  li {
-    flex: 1;
-    line-height: 40px;
-    border: 1px solid silver;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-  }
-}
-
-#tabs {
-  ul {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-  }
-  li {
-    flex: 1;
-    line-height: 40px;
-    display: flex;
-    span {
-      justify-content: center;
-      align-content: center;
-      text-align: center;
-      display: block;
-      flex: 1;
-      border: 1px solid silver;
+.b_backing {
+    .borderno {
+        border-right: none;
     }
-  }
-}
-
-/*********************下拉菜单***************************/
-
-.list {
-  position: fixed;
-  right: 10px;
-  top: 40px;
-  width: 30%;
-  padding: 0;
-  ul {
-    width: 100%;
-    li {
-      height: 40px;
-      width: 100%;
-      background-color: #595f65;
-      border-bottom: solid 1px #CCCCCC;
-      line-height: 40px;
-      text-align: center;
-      a {
-        color: white;
-        border: none;
-      }
+    .head {
+        display: flex;
+        line-height: 60px;
+        dl {
+            flex: 1;
+            line-height: 40px;
+            border-right: 1px solid silver;
+            justify-content: center;
+            align-content: center;
+            margin: 10px 0;
+            text-align: center;
+            background: lightgoldenrodyellow;
+        }
     }
-  }
+    .nav {
+        margin-top: 20px;
+        ul {
+            display: flex;
+        }
+        li {
+            flex: 1;
+            line-height: 40px;
+            border: 1px solid silver;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+        }
+    }
+    #tabs {
+        ul {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            flex: 1;
+            line-height: 40px;
+            display: flex;
+            span {
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                display: block;
+                flex: 1;
+                border: 1px solid silver;
+            }
+        }
+    }
+    /*********************下拉菜单***************************/
+    .llist {
+        position: fixed;
+        right: 10px;
+        top: 40px;
+        width: 30%;
+        padding: 0;
+        ul {
+            width: 100%;
+            li {
+                height: 40px;
+                width: 100%;
+                background-color: #595f65;
+                border-bottom: solid 1px #CCCCCC;
+                line-height: 40px;
+                text-align: center;
+                a {
+                    color: white;
+                    border: none;
+                }
+            }
+        }
+    }
 }

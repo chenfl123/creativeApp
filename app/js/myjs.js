@@ -5,7 +5,7 @@ $(document).on("pageinit","#pagehome",function(){
 		loop:true,
 		autoplay : 3000
 	})
-	console.log('a')
+	 
 	//首页商品展示懒加载一
 	var $pagehome_show = $('.pagehome_show');
 	var $ul1 = $('<ul class="pagehome_showlist"></ul>');
@@ -14,7 +14,7 @@ $(document).on("pageinit","#pagehome",function(){
 			async:false,
 			url:'../json/pagehome.json',
 			success:function(res){
-			console.log(res);
+		//	console.log(res);
 			$.each(res,function(idx,item){
 				var $li1 = $('<li/>').html('<img src="'+item.imgurl+'"/>');					
 				$li1.appendTo($ul1);
@@ -29,7 +29,7 @@ $(document).on("pageinit","#pagehome",function(){
 			async:true,
 			url:'../json/pagehome2.json',
 			success:function(res){
-			console.log(res);
+			 
 			$.each(res,function(idx,item){
 				var $li2 = $('<li/>').html('<img data-original="'+item.imgurl+'"/>');					
 				$li2.appendTo($ul2);
@@ -47,7 +47,7 @@ $(document).on("pageinit","#pagehome",function(){
 			async:true,
 			url:'../json/pagehome3.json',
 			success:function(res){
-			console.log(res);
+//			console.log(res);
 			$.each(res,function(idx,item){		
 				var $li3 = $('<li/>');
 //				var $img = $('<img/>').attr({src:item.imgurl})
@@ -67,19 +67,5 @@ $(document).on("pageinit","#pagehome",function(){
 	});
 	
 	
-// })
-// $(document).ready(function(){
-	$(".iconback").hide()
-	$(window).scroll(function(){
-		console.log($(window).scrollTop())
-		if($(window).scrollTop()>200)
-		{
-			$(".iconback").show()
-		}else{
-			$(".iconback").fadeOut()
-		}
-		$(".iconback").click(function(){
-			$(window).scrollTop(0)
-		})
-	})
+
 })

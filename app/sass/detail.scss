@@ -1,3 +1,4 @@
+#d_detail{
 .shop_header .title span.active {
   background: #fff;
   padding: 18px 3px;
@@ -20,6 +21,7 @@
 }
 
 .List {
+  z-index:100;
   position: fixed;
   right: 10px;
   top: 40px;
@@ -91,4 +93,5 @@
 .comment .shopTime {
   color: silver;
   line-height: 20px;
+}
 }

@@ -1,6 +1,6 @@
-body {
+#personss {
   background-color: #f1f5f6;
-}
+
 
 .header1 {
   display: flex;
@@ -103,10 +103,10 @@ body {
   }
 }
 
-.vip {
+.vips {
   display: flex;
   border-top: solid 1px #e7eaec;
-  height: 55px;
+  height: 43px;
   background-color: white;
   align-items: center;
   text-align: center;
@@ -169,7 +169,7 @@ body {
   }
 }
 
-.list {
+.List {
   position: fixed;
   right: 10px;
   top: 40px;
@@ -190,4 +190,5 @@ body {
       }
     }
   }
+}
 }

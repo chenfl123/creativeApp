@@ -9,11 +9,10 @@
 		<link rel="stylesheet" type="text/css" href="../assets/bootstrap/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="../assets/Swiper/dist/css/swiper.min.css"/>
 		<link rel="stylesheet" type="text/css" href="../font/iconfont.css"/>
-		<link rel="stylesheet" type="text/css" href="../dist/css/common.css"/>
-		<link rel="stylesheet" type="text/css" href="../dist/css/index.css"/>
-		
+		 
+		<link rel="stylesheet" type="text/css" href="../dist/css/app.css"/>
 	</head>
-	<body>
+	<body class="pagekingindex">
 		<div data-role="page" id="pagehome" class="Page">
 			<div data-role="header" class="header" data-position="fixed">
 				<h1>OYA商城</h1>
@@ -25,7 +24,7 @@
 			<div role="content" class="main">
 				<!--回到顶部-->
 				<div class="iconback" style="font-size: 40px;">
-					<i class="iconfont" id="iconback">&#xe618;</i>
+					<i class="iconfont" id="iconback"> &#xe618;</i>
 				</div>
 				<div class="swiper-container" id="main_swiper">
 				    <div class="swiper-wrapper">
@@ -98,16 +97,27 @@
 		<script src="../assets/jquery/jquery.mobilemin.js"></script>
 		<script src="../assets/jquery/swiper.min.js"></script>
 		<script src="../assets/jquery/lazyload.js"></script>
-		<script src="../js/myjs.js"></script>
-		<!--<script>
-			$(document).ready(function(){
-				$("img").lazyload({effect : "fadeIn"});
-			})
-		</script>-->
+		 <script src="../js/myjs.js" ></script> 
+	
 		
 	</body>	
+	<script >
+		 $(document).ready(function(){
+	$(".iconback").hide();
+	$(window).scroll(function(){
 		
-		
+		if($(window).scrollTop()>200)
+		{
+			$(".iconback").show()
+		}else{
+			$(".iconback").fadeOut()
+		}
+		$(".iconback").click(function(){
+			$(window).scrollTop(0)
+		})
+	});
+})
+</script>		
 		
 		
 </html>

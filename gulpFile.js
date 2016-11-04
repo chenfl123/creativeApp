@@ -1,4 +1,4 @@
-
+﻿
 //require引入文件，目的是编译sass文件
 var gulp =require('gulp');
 var sass =require('gulp-sass');
@@ -8,7 +8,8 @@ var concat =require('gulp-concat');
 var jsmin =require('gulp-uglify');
 // 压缩html文件
 var htmlmin=require('gulp-htmlmin');
-
+// 压缩图片
+var imgmin=require('gulp-imagemin');
 // 引入重命名文件
 var rename =require('gulp-rename');
 // 引入同步测试的文件
@@ -18,11 +19,12 @@ var browserSync=require('browser-sync');
 gulp.task('buildSass',function(){
 	// src匹配文件
 	gulp.src('./app/sass/*.scss')
-	.pipe(sass({outputStyle:'compact'}))
+	.pipe(sass({outputStyle:'compressed'}))
+	.pipe(concat('app.css'))
 	.pipe(gulp.dest('./app/dist/css'))
-	// .pipe(sass({outputStyle:'compact'}))
-	// .pipe(rename({suffix:'.min'}))
-	// .pipe(gulp.dest('./dist/css'));
+	.pipe(sass({outputStyle:'compressed'}))
+	.pipe(rename({suffix:'.min'}))
+	.pipe(gulp.dest('./app/dist/css'));
 });
 //监听sass文件
 gulp.task('jtSass',function(){
@@ -32,13 +34,14 @@ gulp.task('jtSass',function(){
 gulp.task('buildJs',function(){
 	gulp.src('./app/js/*.js')
 	.pipe(concat('app.js'))
-	.pipe(gulp.dest('./dist/js'))
+	.pipe(gulp.dest('./app/dist/js'))
 
-	.pipe(jsmin())
+	.pipe(jsmin({mangle:false}))
 	.pipe(rename({suffix:'.min'}))
-	.pipe(gulp.dest('./dist/js'));
+	.pipe(gulp.dest('./app/dist/js'));
 
 });
+
 // 创建合并压缩html文件
 gulp.task('buildHtml',function(){
 	gulp.src('./app/**/*.html')

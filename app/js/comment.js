@@ -4,11 +4,11 @@ document.addEventListener("DOMContentLoaded",function(){
 	//遍历内容
 	$.ajax({
 		type:"get",
-		url:"../dist/js/comment.json",
+		url:"../json/comment.json",
 		dataType:"json",
 		async:true,
 		success:function(res){
-			console.log(res);
+			 
 			var $ul=$(".comment ul");
 			var geshu=0;
 			
@@ -54,13 +54,13 @@ document.addEventListener("DOMContentLoaded",function(){
     });
    
 // 	//点击菜单事件
-//	$list = $(".list");
-//	$lei = $(".fenlei");
-//
+	$list = $(".List");
+	$leis = $(".fenlei");
+
 //	$list.hide();
-//	$lei.on("click", function() {
-//		$list.slideToggle(500);
-//		console.log("hah");
-//	});
+	$leis.on("click", function() {
+		$list.toggle();
+
+	});
 
 });

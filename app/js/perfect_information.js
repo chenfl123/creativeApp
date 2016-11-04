@@ -6,8 +6,8 @@ $(function() {
 	$xian = $("section>.dizhi>div>.xian");
 	$dizhi = $("section>.dizhi>div>input");
 	$btn = $(".sub button");
-	$list = $(".list");
-	$lei = $(".fenlei");
+	$list = $(".Listss");
+	$leis = $(".fenleit");
 
 	$name.on("blur", function() {
 		if($name.val() == "") {
@@ -68,10 +68,8 @@ $(function() {
 	});
 
 	$list.hide();
-	//				$(window).on("click",function(){
-	//					$list.hide(500);
-	//				})
-	$lei.on("click", function() {
+
+	$leis.on("click", function() {
 		$list.slideToggle(500);
 	});
 })

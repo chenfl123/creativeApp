@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded",function(){
 	//加载金库内容
 	$.ajax({
 		type:"get",
-		url:"../dist/js/records.json",
+		url:"../json/records.json",
 		dataType:"json",
 		async:true,
 		success:function(res){
@@ -32,13 +32,13 @@ document.addEventListener("DOMContentLoaded",function(){
 	});
 	
 	//点击菜单事件
-	$list = $(".list");
-	$lei = $(".fenlei");
+	$list = $(".llist");
+	$leit = $(".fenlei");
 
 	$list.hide();
-	$lei.on("click", function() {
+	$leit.on("click", function() {
 		$list.slideToggle(500);
-		console.log("hah");
+		 
 	});
 
 	

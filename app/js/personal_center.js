@@ -1,9 +1,9 @@
 $(function() {
-	$list = $(".list");
-	$lei = $(".fenlei");
+	$list = $(".List");
+	$leia = $(".fenlei");
 
 	$list.hide();
-	$lei.on("click", function() {
+	$leia.on("click", function() {
 		$list.slideToggle(500);
 	})
 })
