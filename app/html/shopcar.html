@@ -31,12 +31,12 @@
 
     </section>
     <footer class="shop_footer">
-        <nav>
+        <nav> 
             <a href="#">
                 <input class="checkall" type="checkbox" checked>全选
              </a>
-            <a href="#">在线支付<span class="iconfont icon-houdongfangiconfont24"></span></a>
-            <a href="#">确认并支付 ( <span class="pay">00</span> )</a>
+            <a href="#" class="currentpay">在线支付<span class="iconfont icon-houdongfangiconfont24"></span></a>
+            <a href="#" class="surepay">确认并支付 ( <span class="pays">00</span> )</a>
         </nav>
     </footer>
 </div>
@@ -68,10 +68,10 @@
     <script>
     document.addEventListener('DOMContentLoaded',function(){
 
-        $list = $(".List");
-        $lei = $(".fenlei");
-        $lei.on('singleTap', function() {
-            $list.toggle();
+        $listw = $(".List");
+        $leiw = $(".fenlei");
+        $leiw.on('singleTap', function() {
+            $listw.toggle();
         })
 
     })

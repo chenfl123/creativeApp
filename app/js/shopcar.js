@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     var $shoplist = $('.shop_content');
-    var pay =$('.pay');
+    var pay =$('.pays');
     var paynumber =0;
     var shopString = localStorage.getItem('shopString');
     shopString = shopString ? JSON.parse(shopString) : [];
-    
+     
 // 创建购物车列表
     var $ul =$('<ul/>').addClass('list');
      $.each(shopString,function(idx, item) {
@@ -70,6 +70,7 @@ $('.checkall').on('singleTap',function(){
        pay.html(00);
     }
 })
+
 $.each($checked,function(idx,item){
   $(this).on('singleTap',function(){
      pay.html(shopString[idx].price);
@@ -77,5 +78,19 @@ $.each($checked,function(idx,item){
 
 })
  
-// 
+// 确认支付
+var surepay=$('.surepay');
+var currentpay=$('.currentpay');
+  surepay.on('singleTap',function(){
+    var r=confirm("确认支付？");
+      if(r){
+        window.open('my_orders.html','_self');
+      }else{return;}
+  })
+  currentpay.on('singleTap',function(){
+    var r=confirm("确认支付？");
+      if(r){
+        window.open('my_orders.html','_self');
+      }else{return;}
+  })
 })

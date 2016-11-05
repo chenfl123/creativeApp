@@ -201,6 +201,16 @@ rest();
 
     }
 
+
+// 立即购买
+    $pay.on('singleTap',function(){
+    	var r=confirm("确认支付？");
+    	if(r){
+    		window.open('my_orders.html','_self');
+    	}else{return;}
+    })
+
+
 })
 
 
@@ -421,7 +431,7 @@ $(function() {
 document.addEventListener('DOMContentLoaded', function() {
 
     var $shoplist = $('.shop_content');
-    var pay =$('.pay');
+    var pay =$('.pays');
     var paynumber =0;
     var shopString = localStorage.getItem('shopString');
     shopString = shopString ? JSON.parse(shopString) : [];

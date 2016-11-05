@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var $addcar = $('.addcar');
     var $number = $('.number');
-    var $pay = $('.pay');
+  
 
 
 
@@ -41,14 +41,15 @@ document.addEventListener('DOMContentLoaded', function() {
             carnum += parseInt(item.number);
         })
     }
-rest();
+    rest();
     $number.html(carnum);
+
 
    
     // 加入购物车设置数据
 
     $addcar.on('singleTap', function() {
-      rest();
+         rest();
         var goods = {};
         var Id = $('.d_show img').attr('id');
         var numb = 1;
@@ -88,6 +89,7 @@ rest();
         }
 
     }
+
 
 })
 
